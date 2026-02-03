@@ -4,9 +4,17 @@
   "@componentsCalendarCalendarDayDetailNoMealsLoggedForDay": {
     "description": "Message shown when no meals are logged for selected day"
   },
-  "componentsCalendarMacroSummaryComponentsCommonOk": "OK",
-  "@componentsCalendarMacroSummaryComponentsCommonOk": {
-    "description": "Common OK button label"
+  "componentsCalendarCalendarDayDetailUnknownDish": "Unknown Dish",
+  "@componentsCalendarCalendarDayDetailUnknownDish": {
+    "description": "Label for dish when name is not available"
+  },
+  "componentsCalendarMacroSummaryCalories": "Calories",
+  "@componentsCalendarMacroSummaryCalories": {
+    "description": "Calories label"
+  },
+  "componentsCalendarMacroSummaryCarbs": "Carbs",
+  "@componentsCalendarMacroSummaryCarbs": {
+    "description": "Carbs label"
   },
   "componentsCalendarMacroSummaryEstimatedCalories": "Estimated Calories",
   "@componentsCalendarMacroSummaryEstimatedCalories": {
@@ -23,6 +31,14 @@
   "componentsCalendarMacroSummaryEstimatedCaloriesTodayMessage": "This is your estimated calorie expenditure for today based on your activity level. Since the day isn't complete yet, this represents your base metabolic rate plus estimated activity. Your actual calories burned may be higher if you do more activities today.",
   "@componentsCalendarMacroSummaryEstimatedCaloriesTodayMessage": {
     "description": "Message explaining estimated calories for today"
+  },
+  "componentsCalendarMacroSummaryFat": "Fat",
+  "@componentsCalendarMacroSummaryFat": {
+    "description": "Fat label"
+  },
+  "componentsCalendarMacroSummaryFiber": "Fiber",
+  "@componentsCalendarMacroSummaryFiber": {
+    "description": "Fiber nutrition label"
   },
   "componentsCalendarMacroSummaryGetAiTip": "Get AI Tip",
   "@componentsCalendarMacroSummaryGetAiTip": {
@@ -48,33 +64,33 @@
   "@componentsCalendarMacroSummaryNutritionSummary": {
     "description": "Title for nutrition summary section"
   },
+  "componentsCalendarMacroSummaryProtein": "Protein",
+  "@componentsCalendarMacroSummaryProtein": {
+    "description": "Protein label"
+  },
+  "componentsCalendarMacroSummaryCompactCalories": "Cal",
+  "@componentsCalendarMacroSummaryCompactCalories": {
+    "description": "Short label for calories used in compact macro view"
+  },
+  "componentsCalendarMacroSummaryCompactProtein": "Protein",
+  "@componentsCalendarMacroSummaryCompactProtein": {
+    "description": "Short label for protein used in compact macro view"
+  },
+  "componentsCalendarMacroSummaryCompactCarbs": "Carbs",
+  "@componentsCalendarMacroSummaryCompactCarbs": {
+    "description": "Short label for carbs used in compact macro view"
+  },
+  "componentsCalendarMacroSummaryCompactFat": "Fat",
+  "@componentsCalendarMacroSummaryCompactFat": {
+    "description": "Short label for fat used in compact macro view"
+  },
+  "componentsCommonOk": "OK",
+  "@componentsCommonOk": {
+    "description": "Common OK button label"
+  },
   "componentsChatAgentStepsModalAgentProcessingSteps": "Agent Processing Steps",
   "@componentsChatAgentStepsModalAgentProcessingSteps": {
     "description": "Title for agent steps modal"
-  },
-  "componentsChatAgentStepsModalBadgeAiValidations": "AI validations",
-  "@componentsChatAgentStepsModalBadgeAiValidations": {
-    "description": "Label for AI validations badge"
-  },
-  "componentsChatAgentStepsModalBadgeAutomaticFixes": "Automatic fixes",
-  "@componentsChatAgentStepsModalBadgeAutomaticFixes": {
-    "description": "Label for automatic fixes badge"
-  },
-  "componentsChatAgentStepsModalBadgeEmergencyOverrides": "Emergency overrides",
-  "@componentsChatAgentStepsModalBadgeEmergencyOverrides": {
-    "description": "Label for emergency override badge"
-  },
-  "componentsChatAgentStepsModalBotType": "Bot Type",
-  "@componentsChatAgentStepsModalBotType": {
-    "description": "Label for bot type"
-  },
-  "componentsChatAgentStepsModalCompletedSteps": "Completed Steps",
-  "@componentsChatAgentStepsModalCompletedSteps": {
-    "description": "Label for completed steps"
-  },
-  "componentsChatAgentStepsModalComponentsCommonCopyToClipboard": "Copy to clipboard",
-  "@componentsChatAgentStepsModalComponentsCommonCopyToClipboard": {
-    "description": "Common tooltip for copy to clipboard"
   },
   "componentsChatAgentStepsModalCopiedToClipboard": "Copied to clipboard",
   "@componentsChatAgentStepsModalCopiedToClipboard": {
@@ -84,50 +100,77 @@
   "@componentsChatAgentStepsModalCopyAll": {
     "description": "Button text to copy all"
   },
+  "componentsChatAgentStepsModalViewFullData": "View Full Data",
+  "@componentsChatAgentStepsModalViewFullData": {
+    "description": "Button text to view full data"
+  },
+  "componentsChatAgentStepsModalViewFullPrompt": "View Full Prompt",
+  "@componentsChatAgentStepsModalViewFullPrompt": {
+    "description": "Button text to view full prompt"
+  },
+  "componentsChatAgentStepsModalThinkingProcessTitle": "🧠 Thinking Process",
+  "@componentsChatAgentStepsModalThinkingProcessTitle": {
+    "description": "Title for thinking process section"
+  },
+  "componentsChatAgentStepsModalThinkingProcessSubtitle": "Real-time agent thinking steps",
+  "@componentsChatAgentStepsModalThinkingProcessSubtitle": {
+    "description": "Subtitle for thinking process section"
+  },
+  "componentsChatAgentStepsModalProcessingStepsTitle": "⚙️ Processing Steps",
+  "@componentsChatAgentStepsModalProcessingStepsTitle": {
+    "description": "Title for processing steps section"
+  },
+  "componentsChatAgentStepsModalProcessingStepsSubtitle": "Detailed step-by-step execution",
+  "@componentsChatAgentStepsModalProcessingStepsSubtitle": {
+    "description": "Subtitle for processing steps section"
+  },
+  "componentsChatAgentStepsModalProcessingSummary": "Processing Summary",
+  "@componentsChatAgentStepsModalProcessingSummary": {
+    "description": "Title for processing summary card"
+  },
   "componentsChatAgentStepsModalCopySummaryTooltip": "Copy summary data",
   "@componentsChatAgentStepsModalCopySummaryTooltip": {
     "description": "Tooltip for copying summary"
   },
-  "componentsChatAgentStepsModalDataOutput": "📤 Data Output",
-  "@componentsChatAgentStepsModalDataOutput": {
-    "description": "Header for data output section"
+  "componentsChatAgentStepsModalProcessingTime": "Processing Time",
+  "@componentsChatAgentStepsModalProcessingTime": {
+    "description": "Label for processing time"
   },
-  "componentsChatAgentStepsModalDeepSearch": "Deep Search",
-  "@componentsChatAgentStepsModalDeepSearch": {
-    "description": "Label for deep search setting"
+  "componentsChatAgentStepsModalBotType": "Bot Type",
+  "@componentsChatAgentStepsModalBotType": {
+    "description": "Label for bot type"
   },
-  "componentsChatAgentStepsModalDisabled": "Disabled",
-  "@componentsChatAgentStepsModalDisabled": {
-    "description": "Disabled label"
+  "componentsChatAgentStepsModalTotalSteps": "Total Steps",
+  "@componentsChatAgentStepsModalTotalSteps": {
+    "description": "Label for total steps"
   },
-  "componentsChatAgentStepsModalEnabled": "Enabled",
-  "@componentsChatAgentStepsModalEnabled": {
-    "description": "Enabled label"
-  },
-  "componentsChatAgentStepsModalErrorDetails": "❌ Error Details",
-  "@componentsChatAgentStepsModalErrorDetails": {
-    "description": "Header for error details section"
-  },
-  "componentsChatAgentStepsModalErrorRecovery": "Error Recovery",
-  "@componentsChatAgentStepsModalErrorRecovery": {
-    "description": "Label for error recovery stats"
+  "componentsChatAgentStepsModalSkippedSteps": "Skipped Steps",
+  "@componentsChatAgentStepsModalSkippedSteps": {
+    "description": "Label for skipped steps"
   },
   "componentsChatAgentStepsModalFailedSteps": "Failed Steps",
   "@componentsChatAgentStepsModalFailedSteps": {
     "description": "Label for failed steps"
   },
-  "componentsChatAgentStepsModalLengthLabel": "Length: {count} characters",
-  "@componentsChatAgentStepsModalLengthLabel": {
-    "description": "Length label with placeholder",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
+  "componentsChatAgentStepsModalErrorRecovery": "Error Recovery",
+  "@componentsChatAgentStepsModalErrorRecovery": {
+    "description": "Label for error recovery stats"
   },
-  "componentsChatAgentStepsModalMetadata": "📊 Metadata",
-  "@componentsChatAgentStepsModalMetadata": {
-    "description": "Header for metadata section"
+  "componentsChatAgentStepsModalCompletedSteps": "Completed Steps",
+  "@componentsChatAgentStepsModalCompletedSteps": {
+    "description": "Label for completed steps"
+  },
+  "componentsChatAgentStepsModalDeepSearch": "Deep Search",
+  "@componentsChatAgentStepsModalDeepSearch": {
+    "description": "Label for deep search setting"
+  },
+  "componentsChatAgentStepsModalEnabled": "Enabled",
+  "@componentsChatAgentStepsModalEnabled": {
+    "description": "Enabled label"
+  },
+  "componentsChatAgentStepsModalDisabled": "Disabled",
+  "@componentsChatAgentStepsModalDisabled": {
+    "description": "Disabled label"
   },
   "componentsChatAgentStepsModalModifications": "Modifications",
   "@componentsChatAgentStepsModalModifications": {
@@ -141,41 +184,21 @@
   "@componentsChatAgentStepsModalPerfectProcessing": {
     "description": "Detailed text when no modifications were needed"
   },
-  "componentsChatAgentStepsModalPipelineModificationsSubtitle": "No modifications were needed - your request was processed smoothly!",
-  "@componentsChatAgentStepsModalPipelineModificationsSubtitle": {
-    "description": "Subtitle for pipeline modifications when none"
-  },
   "componentsChatAgentStepsModalPipelineModificationsTitle": "✨ Pipeline Modifications",
   "@componentsChatAgentStepsModalPipelineModificationsTitle": {
     "description": "Title for pipeline modifications section"
   },
-  "componentsChatAgentStepsModalProcessingStepsSubtitle": "Detailed step-by-step execution",
-  "@componentsChatAgentStepsModalProcessingStepsSubtitle": {
-    "description": "Subtitle for processing steps section"
+  "componentsChatAgentStepsModalPipelineModificationsSubtitle": "No modifications were needed - your request was processed smoothly!",
+  "@componentsChatAgentStepsModalPipelineModificationsSubtitle": {
+    "description": "Subtitle for pipeline modifications when none"
   },
-  "componentsChatAgentStepsModalProcessingStepsTitle": "⚙️ Processing Steps",
-  "@componentsChatAgentStepsModalProcessingStepsTitle": {
-    "description": "Title for processing steps section"
+  "componentsChatAgentStepsModalStepModifications": "🔧 Step Modifications",
+  "@componentsChatAgentStepsModalStepModifications": {
+    "description": "Title for step-level modifications"
   },
-  "componentsChatAgentStepsModalProcessingSummary": "Processing Summary",
-  "@componentsChatAgentStepsModalProcessingSummary": {
-    "description": "Title for processing summary card"
-  },
-  "componentsChatAgentStepsModalProcessingTime": "Processing Time",
-  "@componentsChatAgentStepsModalProcessingTime": {
-    "description": "Label for processing time"
-  },
-  "componentsChatAgentStepsModalRawStepData": "🔍 Raw Step Data",
-  "@componentsChatAgentStepsModalRawStepData": {
-    "description": "Header for raw step data section"
-  },
-  "componentsChatAgentStepsModalSkipDetails": "⏭️ Skip Details",
-  "@componentsChatAgentStepsModalSkipDetails": {
-    "description": "Header for skip details section"
-  },
-  "componentsChatAgentStepsModalSkippedSteps": "Skipped Steps",
-  "@componentsChatAgentStepsModalSkippedSteps": {
-    "description": "Label for skipped steps"
+  "componentsChatAgentStepsModalCopyModifications": "Copy modifications",
+  "@componentsChatAgentStepsModalCopyModifications": {
+    "description": "Tooltip to copy modifications"
   },
   "componentsChatAgentStepsModalSummaryLabel": "Summary: {summary}",
   "@componentsChatAgentStepsModalSummaryLabel": {
@@ -186,13 +209,138 @@
       }
     }
   },
-  "componentsChatAgentStepsModalThinkingProcessSubtitle": "Real-time agent thinking steps",
-  "@componentsChatAgentStepsModalThinkingProcessSubtitle": {
-    "description": "Subtitle for thinking process section"
+  "componentsChatAgentStepsModalEnhancedSystemPrompt": "🤖 Enhanced System Prompt",
+  "@componentsChatAgentStepsModalEnhancedSystemPrompt": {
+    "description": "Title for enhanced system prompt"
   },
-  "componentsChatAgentStepsModalThinkingProcessTitle": "🧠 Thinking Process",
-  "@componentsChatAgentStepsModalThinkingProcessTitle": {
-    "description": "Title for thinking process section"
+  "componentsChatAgentStepsModalCopyEnhancedPrompt": "Copy enhanced system prompt",
+  "componentsChatDishSuggestionCardHighProtein": "High protein dish",
+  "@componentsChatDishSuggestionCardHighProtein": {
+    "description": "Title for high protein dish"
+  },
+  "componentsChatDishSuggestionCardHighCarb": "High carb dish",
+  "@componentsChatDishSuggestionCardHighCarb": {
+    "description": "Title for high carb dish"
+  },
+  "componentsChatDishSuggestionCardHighFat": "High fat dish",
+  "@componentsChatDishSuggestionCardHighFat": {
+    "description": "Title for high fat dish"
+  },
+  "componentsChatDishSuggestionCardBalanced": "Balanced dish",
+  "@componentsChatDishSuggestionCardBalanced": {
+    "description": "Title for balanced dish"
+  },
+  "componentsChatDishSuggestionCardUnbalanced": "Unbalanced dish",
+  "@componentsChatDishSuggestionCardUnbalanced": {
+    "description": "Title for unbalanced dish"
+  },
+  "componentsChatDishSuggestionCardProtein": "Protein",
+  "@componentsChatDishSuggestionCardProtein": {
+    "description": "Protein label for nutrition bar"
+  },
+  "componentsChatDishSuggestionCardCarbs": "Carbs",
+  "@componentsChatDishSuggestionCardCarbs": {
+    "description": "Carbs label for nutrition bar"
+  },
+  "componentsChatDishSuggestionCardFat": "Fat",
+  "@componentsChatDishSuggestionCardFat": {
+    "description": "Fat label for nutrition bar"
+  },
+  "componentsChatDishSuggestionCardCalories": "Calories",
+  "@componentsChatDishSuggestionCardCalories": {
+    "description": "Calories label for nutrition bar"
+  },
+  "componentsChatDishSuggestionCardInspect": "Details",
+  "@componentsChatDishSuggestionCardInspect": {
+    "description": "Button text for dish details"
+  },
+  "componentsChatMessageBubbleYou": "You",
+  "@componentsChatMessageBubbleYou": {
+    "description": "Label for the user in the message bubble"
+  },
+  "componentsChatMessageBubbleAssistant": "PlatePal Assistant",
+  "@componentsChatMessageBubbleAssistant": {
+    "description": "Label for the assistant in the message bubble"
+  },
+  "componentsChatMessageBubbleBotTag": "(bot)",
+  "@componentsChatMessageBubbleBotTag": {
+    "description": "Tag to identify the bot in the message bubble"
+  },
+  "componentsChatMessageBubbleSending": "Sending...",
+  "@componentsChatMessageBubbleSending": {
+    "description": "Text shown while a message is being sent"
+  },
+  "componentsChatMessageBubbleSuggestedDishes": "Suggested Dishes",
+  "@componentsChatMessageBubbleSuggestedDishes": {
+    "description": "Title for the suggested dishes section"
+  },
+  "componentsChatMessageBubbleRecommendation": "Recommendation",
+  "@componentsChatMessageBubbleRecommendation": {
+    "description": "Label for a recommendation in the message bubble"
+  },
+  "componentsChatMessageBubbleNoRecommendationsAvailable": "No recommendations available.",
+  "@componentsChatMessageBubbleNoRecommendationsAvailable": {
+    "description": "Text shown when no recommendations are available"
+  },
+  "@componentsChatAgentStepsModalCopyEnhancedPrompt": {
+    "description": "Tooltip to copy enhanced system prompt"
+  },
+  "componentsChatAgentStepsModalLengthLabel": "Length: {count} characters",
+  "@componentsChatAgentStepsModalLengthLabel": {
+    "description": "Length label with placeholder",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "componentsChatAgentStepsModalTechnicalDetails": "Technical Details",
+  "@componentsChatAgentStepsModalTechnicalDetails": {
+    "description": "Header for technical details in modification item"
+  },
+  "componentsChatAgentStepsModalDataChanges": "Data Changes",
+  "@componentsChatAgentStepsModalDataChanges": {
+    "description": "Header for before/after data changes"
+  },
+  "componentsChatAgentStepsModalBefore": "Before",
+  "@componentsChatAgentStepsModalBefore": {
+    "description": "Label for before data column"
+  },
+  "componentsChatAgentStepsModalAfter": "After",
+  "@componentsChatAgentStepsModalAfter": {
+    "description": "Label for after data column"
+  },
+  "componentsChatAgentStepsModalStatusSkipped": "Skipped",
+  "@componentsChatAgentStepsModalStatusSkipped": {
+    "description": "Status label for skipped steps"
+  },
+  "componentsChatAgentStepsModalStatusErrorRecovered": "Error recovered",
+  "@componentsChatAgentStepsModalStatusErrorRecovered": {
+    "description": "Status label when an error was recovered"
+  },
+  "componentsChatAgentStepsModalStatusErrorHandlingFailed": "Error handling failed",
+  "@componentsChatAgentStepsModalStatusErrorHandlingFailed": {
+    "description": "Status label when error handling failed"
+  },
+  "componentsChatAgentStepsModalStatusCompletedSuccessfully": "Completed successfully",
+  "@componentsChatAgentStepsModalStatusCompletedSuccessfully": {
+    "description": "Status label for successful completion"
+  },
+  "componentsChatAgentStepsModalFailed": "Failed",
+  "@componentsChatAgentStepsModalFailed": {
+    "description": "Generic failed label"
+  },
+  "componentsChatAgentStepsModalBadgeEmergencyOverrides": "Emergency overrides",
+  "@componentsChatAgentStepsModalBadgeEmergencyOverrides": {
+    "description": "Label for emergency override badge"
+  },
+  "componentsChatAgentStepsModalBadgeAiValidations": "AI validations",
+  "@componentsChatAgentStepsModalBadgeAiValidations": {
+    "description": "Label for AI validations badge"
+  },
+  "componentsChatAgentStepsModalBadgeAutomaticFixes": "Automatic fixes",
+  "@componentsChatAgentStepsModalBadgeAutomaticFixes": {
+    "description": "Label for automatic fixes badge"
   },
   "componentsChatAgentStepsModalTotalModifications": "Total modifications: {count}",
   "@componentsChatAgentStepsModalTotalModifications": {
@@ -203,17 +351,47 @@
       }
     }
   },
-  "componentsChatAgentStepsModalTotalSteps": "Total Steps",
-  "@componentsChatAgentStepsModalTotalSteps": {
-    "description": "Label for total steps"
+  "componentsChatAgentStepsModalSkipDetails": "⏭️ Skip Details",
+  "@componentsChatAgentStepsModalSkipDetails": {
+    "description": "Header for skip details section"
   },
-  "componentsChatAgentStepsModalViewFullData": "View Full Data",
-  "@componentsChatAgentStepsModalViewFullData": {
-    "description": "Button text to view full data"
+  "componentsChatAgentStepsModalMetadata": "📊 Metadata",
+  "@componentsChatAgentStepsModalMetadata": {
+    "description": "Header for metadata section"
   },
-  "componentsChatAgentStepsModalViewFullPrompt": "View Full Prompt",
-  "@componentsChatAgentStepsModalViewFullPrompt": {
-    "description": "Button text to view full prompt"
+  "componentsChatAgentStepsModalDataOutput": "📤 Data Output",
+  "@componentsChatAgentStepsModalDataOutput": {
+    "description": "Header for data output section"
+  },
+  "componentsChatAgentStepsModalErrorDetails": "❌ Error Details",
+  "@componentsChatAgentStepsModalErrorDetails": {
+    "description": "Header for error details section"
+  },
+  "componentsChatAgentStepsModalRawStepData": "🔍 Raw Step Data",
+  "@componentsChatAgentStepsModalRawStepData": {
+    "description": "Header for raw step data section"
+  },
+  "componentsChatAgentStepsModalIdLabel": "ID: {id}",
+  "@componentsChatAgentStepsModalIdLabel": {
+    "description": "ID label with placeholder",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "componentsChatAgentStepsModalTimeLabel": "Time: {time}",
+  "@componentsChatAgentStepsModalTimeLabel": {
+    "description": "Time label with placeholder",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "componentsCommonCopyToClipboard": "Copy to clipboard",
+  "@componentsCommonCopyToClipboard": {
+    "description": "Common tooltip for copy to clipboard"
   },
   "componentsChatBotProfileCustomizationDialogAngryGreg": "Angry Greg",
   "@componentsChatBotProfileCustomizationDialogAngryGreg": {
@@ -223,9 +401,21 @@
   "@componentsChatBotProfileCustomizationDialogBotName": {
     "description": "Bot name field label"
   },
+  "componentsChatBotProfileCustomizationDialogCancel": "Cancel",
+  "@componentsChatBotProfileCustomizationDialogCancel": {
+    "description": "Cancel button text"
+  },
   "componentsChatBotProfileCustomizationDialogCasualGymBro": "Casual Gym Bro",
   "@componentsChatBotProfileCustomizationDialogCasualGymBro": {
     "description": "Casual gym bro personality type"
+  },
+  "componentsChatBotProfileCustomizationDialogChangeAvatar": "Change Avatar",
+  "@componentsChatBotProfileCustomizationDialogChangeAvatar": {
+    "description": "Change avatar button text"
+  },
+  "componentsChatBotProfileCustomizationDialogChooseFromGallery": "Choose from Gallery",
+  "@componentsChatBotProfileCustomizationDialogChooseFromGallery": {
+    "description": "Choose from gallery option"
   },
   "componentsChatBotProfileCustomizationDialogEditBotProfile": "Edit Bot Profile",
   "@componentsChatBotProfileCustomizationDialogEditBotProfile": {
@@ -247,45 +437,95 @@
   "@componentsChatBotProfileCustomizationDialogProfessionalNutritionist": {
     "description": "Professional nutritionist personality type"
   },
+  "componentsChatBotProfileCustomizationDialogProfileSaved": "Profile saved successfully",
+  "@componentsChatBotProfileCustomizationDialogProfileSaved": {
+    "description": "Profile save success message"
+  },
+  "componentsChatBotProfileCustomizationDialogProfileSaveFailed": "Failed to save profile",
+  "@componentsChatBotProfileCustomizationDialogProfileSaveFailed": {
+    "description": "Profile save error message"
+  },
+  "componentsChatBotProfileCustomizationDialogRemoveAvatar": "Remove Avatar",
+  "@componentsChatBotProfileCustomizationDialogRemoveAvatar": {
+    "description": "Remove avatar button text"
+  },
+  "componentsChatBotProfileCustomizationDialogRequiredField": "This field is required",
+  "@componentsChatBotProfileCustomizationDialogRequiredField": {
+    "description": "Required field validation message"
+  },
+  "componentsChatBotProfileCustomizationDialogSave": "Save",
+  "@componentsChatBotProfileCustomizationDialogSave": {
+    "description": "Save button text"
+  },
+  "componentsChatBotProfileCustomizationDialogTakePhoto": "Take Photo",
+  "@componentsChatBotProfileCustomizationDialogTakePhoto": {
+    "description": "Take photo option"
+  },
   "componentsChatBotProfileCustomizationDialogVeryAngryBro": "Very Angry Bro",
   "@componentsChatBotProfileCustomizationDialogVeryAngryBro": {
     "description": "Very angry bro personality type"
   },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionAngryGreg": "Intense & Supplement-focused",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionAngryGreg": {
-    "description": "Personality description for angry Greg"
-  },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionCasualGymbro": "Casual & Motivational",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionCasualGymbro": {
-    "description": "Personality description for casual gymbro"
-  },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionFitnessCoach": "Encouraging & Supportive",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionFitnessCoach": {
-    "description": "Personality description for fitness coach"
-  },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNice": "Friendly & Helpful",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNice": {
-    "description": "Personality description for nice bot"
-  },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNutritionist": "Professional & Evidence-based",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNutritionist": {
+  "componentsChatBotPersonalityDescriptionNutritionist": "Professional & Evidence-based",
+  "@componentsChatBotPersonalityDescriptionNutritionist": {
     "description": "Personality description for nutritionist bot"
   },
-  "componentsChatChatHeaderComponentsChatBotPersonalityDescriptionVeryAngryBro": "Extremely Intense",
-  "@componentsChatChatHeaderComponentsChatBotPersonalityDescriptionVeryAngryBro": {
+  "componentsChatBotPersonalityDescriptionCasualGymbro": "Casual & Motivational",
+  "@componentsChatBotPersonalityDescriptionCasualGymbro": {
+    "description": "Personality description for casual gymbro"
+  },
+  "componentsChatBotPersonalityDescriptionAngryGreg": "Intense & Supplement-focused",
+  "@componentsChatBotPersonalityDescriptionAngryGreg": {
+    "description": "Personality description for angry Greg"
+  },
+  "componentsChatBotPersonalityDescriptionVeryAngryBro": "Extremely Intense",
+  "@componentsChatBotPersonalityDescriptionVeryAngryBro": {
     "description": "Personality description for very angry bro"
   },
-  "componentsChatChatHeaderComponentsChatEditBotProfileTooltip": "Edit Bot Profile",
-  "@componentsChatChatHeaderComponentsChatEditBotProfileTooltip": {
+  "componentsChatBotPersonalityDescriptionFitnessCoach": "Encouraging & Supportive",
+  "@componentsChatBotPersonalityDescriptionFitnessCoach": {
+    "description": "Personality description for fitness coach"
+  },
+  "componentsChatBotPersonalityDescriptionNice": "Friendly & Helpful",
+  "@componentsChatBotPersonalityDescriptionNice": {
+    "description": "Personality description for nice bot"
+  },
+  "componentsChatEditBotProfileTooltip": "Edit Bot Profile",
+  "@componentsChatEditBotProfileTooltip": {
     "description": "Tooltip for edit bot profile button"
   },
-  "componentsChatChatInputComponentsChatBotProfileCustomizationDialogChooseFromGallery": "Choose from Gallery",
-  "@componentsChatChatInputComponentsChatBotProfileCustomizationDialogChooseFromGallery": {
-    "description": "Choose from gallery option"
+  "componentsChatChatInputErrorPickingImage": "Error picking image: {error}",
+  "@componentsChatChatInputErrorPickingImage": {
+    "description": "Error message when image picker fails",
+    "placeholders": {
+      "error": {}
+    }
   },
-  "componentsChatChatInputComponentsChatBotProfileCustomizationDialogTakePhoto": "Take Photo",
-  "@componentsChatChatInputComponentsChatBotProfileCustomizationDialogTakePhoto": {
-    "description": "Take photo option"
+  "componentsChatMessageBubbleModificationEmergency": "{count} emergency fixes applied",
+  "componentsChatMessageBubbleModificationAi": "{count} AI enhancements applied",
+  "componentsChatMessageBubbleModificationAutomatic": "{count} automatic improvements applied",
+  "@componentsChatMessageBubbleModificationEmergency": {
+    "description": "Message bubble hint for emergency modifications",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@componentsChatMessageBubbleModificationAi": {
+    "description": "Message bubble hint for AI modifications",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@componentsChatMessageBubbleModificationAutomatic": {
+    "description": "Message bubble hint for automatic modifications",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "componentsChatChatInputImageAttached": "Image attached",
   "@componentsChatChatInputImageAttached": {
@@ -294,6 +534,14 @@
   "componentsChatChatInputIngredientsAdded": "Ingredients Added",
   "@componentsChatChatInputIngredientsAdded": {
     "description": "Label for added ingredients preview in chat"
+  },
+  "componentsChatChatInputScanBarcode": "Scan Barcode",
+  "@componentsChatChatInputScanBarcode": {
+    "description": "Scan barcode button text"
+  },
+  "componentsChatChatInputSearchProduct": "Search Product",
+  "@componentsChatChatInputSearchProduct": {
+    "description": "Search product button text"
   },
   "componentsChatChatInputSendMessage": "Send message",
   "@componentsChatChatInputSendMessage": {
@@ -307,25 +555,9 @@
   "@componentsChatChatWelcomeAnalyzeNutrition": {
     "description": "Analyze nutrition quick action"
   },
-  "componentsChatChatWelcomeAnalyzeNutritionMessage": "Help me analyze the nutritional values in my meal",
-  "@componentsChatChatWelcomeAnalyzeNutritionMessage": {
-    "description": "Message when tapping on nutrition analysis"
-  },
-  "componentsChatChatWelcomeAnalyzeNutritionSubtitle": "Analyze the nutritional values of your meals",
-  "@componentsChatChatWelcomeAnalyzeNutritionSubtitle": {
-    "description": "Subtitle for nutrition analysis"
-  },
   "componentsChatChatWelcomeCalculateMacros": "Calculate macros",
   "@componentsChatChatWelcomeCalculateMacros": {
     "description": "Calculate macros quick action"
-  },
-  "componentsChatChatWelcomeCalculateMacrosMessage": "Help me calculate the macros for my meals",
-  "@componentsChatChatWelcomeCalculateMacrosMessage": {
-    "description": "Message when tapping on calculate macros"
-  },
-  "componentsChatChatWelcomeCalculateMacrosSubtitle": "Calculate macros for your meals",
-  "@componentsChatChatWelcomeCalculateMacrosSubtitle": {
-    "description": "Subtitle for calculate macros"
   },
   "componentsChatChatWelcomeChatWelcomeSubtitle": "Your AI nutrition assistant is here to help",
   "@componentsChatChatWelcomeChatWelcomeSubtitle": {
@@ -339,14 +571,6 @@
   "@componentsChatChatWelcomeFindAlternatives": {
     "description": "Find alternatives quick action"
   },
-  "componentsChatChatWelcomeFindAlternativesMessage": "Find healthy alternatives to my current meal",
-  "@componentsChatChatWelcomeFindAlternativesMessage": {
-    "description": "Message when tapping on find alternatives"
-  },
-  "componentsChatChatWelcomeFindAlternativesSubtitle": "Discover healthy food alternatives",
-  "@componentsChatChatWelcomeFindAlternativesSubtitle": {
-    "description": "Subtitle for find alternatives"
-  },
   "componentsChatChatWelcomeGetStartedToday": "Get started today",
   "@componentsChatChatWelcomeGetStartedToday": {
     "description": "Get started section title"
@@ -355,45 +579,65 @@
   "@componentsChatChatWelcomeIngredientInfo": {
     "description": "Ingredient info quick action"
   },
-  "componentsChatChatWelcomeIngredientInfoMessage": "Tell me about the nutritional benefits of ingredients",
-  "@componentsChatChatWelcomeIngredientInfoMessage": {
-    "description": "Message when tapping on ingredient info"
-  },
-  "componentsChatChatWelcomeIngredientInfoSubtitle": "Learn more about ingredients and their benefits",
-  "@componentsChatChatWelcomeIngredientInfoSubtitle": {
-    "description": "Subtitle for ingredient info"
-  },
   "componentsChatChatWelcomeMealPlan": "Meal plan help",
   "@componentsChatChatWelcomeMealPlan": {
     "description": "Meal plan help quick action"
-  },
-  "componentsChatChatWelcomeMealPlanMessage": "Help me create a weekly meal plan",
-  "@componentsChatChatWelcomeMealPlanMessage": {
-    "description": "Message when tapping on meal plan"
-  },
-  "componentsChatChatWelcomeMealPlanSubtitle": "Create weekly meal plans",
-  "@componentsChatChatWelcomeMealPlanSubtitle": {
-    "description": "Subtitle for meal plan"
   },
   "componentsChatChatWelcomeSuggestMeal": "Suggest a meal",
   "@componentsChatChatWelcomeSuggestMeal": {
     "description": "Suggest meal quick action"
   },
-  "componentsChatChatWelcomeSuggestMealMessage": "Suggest a healthy meal based on my fitness goals",
-  "@componentsChatChatWelcomeSuggestMealMessage": {
-    "description": "Message when tapping on suggest a meal"
-  },
   "componentsChatChatWelcomeSuggestMealSubtitle": "Get personalized meal recommendations",
   "@componentsChatChatWelcomeSuggestMealSubtitle": {
     "description": "Subtitle for suggest a meal"
   },
+  "componentsChatChatWelcomeSuggestMealMessage": "Suggest a healthy meal based on my fitness goals",
+  "@componentsChatChatWelcomeSuggestMealMessage": {
+    "description": "Message when tapping on suggest a meal"
+  },
+  "componentsChatChatWelcomeAnalyzeNutritionSubtitle": "Analyze the nutritional values of your meals",
+  "@componentsChatChatWelcomeAnalyzeNutritionSubtitle": {
+    "description": "Subtitle for nutrition analysis"
+  },
+  "componentsChatChatWelcomeAnalyzeNutritionMessage": "Help me analyze the nutritional values in my meal",
+  "@componentsChatChatWelcomeAnalyzeNutritionMessage": {
+    "description": "Message when tapping on nutrition analysis"
+  },
+  "componentsChatChatWelcomeFindAlternativesSubtitle": "Discover healthy food alternatives",
+  "@componentsChatChatWelcomeFindAlternativesSubtitle": {
+    "description": "Subtitle for find alternatives"
+  },
+  "componentsChatChatWelcomeFindAlternativesMessage": "Find healthy alternatives to my current meal",
+  "@componentsChatChatWelcomeFindAlternativesMessage": {
+    "description": "Message when tapping on find alternatives"
+  },
+  "componentsChatChatWelcomeCalculateMacrosSubtitle": "Calculate macros for your meals",
+  "@componentsChatChatWelcomeCalculateMacrosSubtitle": {
+    "description": "Subtitle for calculate macros"
+  },
+  "componentsChatChatWelcomeCalculateMacrosMessage": "Help me calculate the macros for my meals",
+  "@componentsChatChatWelcomeCalculateMacrosMessage": {
+    "description": "Message when tapping on calculate macros"
+  },
+  "componentsChatChatWelcomeMealPlanSubtitle": "Create weekly meal plans",
+  "@componentsChatChatWelcomeMealPlanSubtitle": {
+    "description": "Subtitle for meal plan"
+  },
+  "componentsChatChatWelcomeMealPlanMessage": "Help me create a weekly meal plan",
+  "@componentsChatChatWelcomeMealPlanMessage": {
+    "description": "Message when tapping on meal plan"
+  },
+  "componentsChatChatWelcomeIngredientInfoSubtitle": "Learn more about ingredients and their benefits",
+  "@componentsChatChatWelcomeIngredientInfoSubtitle": {
+    "description": "Subtitle for ingredient info"
+  },
+  "componentsChatChatWelcomeIngredientInfoMessage": "Tell me about the nutritional benefits of ingredients",
+  "@componentsChatChatWelcomeIngredientInfoMessage": {
+    "description": "Message when tapping on ingredient info"
+  },
   "componentsChatChatWelcomeWhatCanIHelpWith": "What can I help you with?",
   "@componentsChatChatWelcomeWhatCanIHelpWith": {
     "description": "Help options question"
-  },
-  "componentsChatDishSuggestionCardBalanced": "Balanced dish",
-  "@componentsChatDishSuggestionCardBalanced": {
-    "description": "Title for balanced dish"
   },
   "componentsChatDishSuggestionCardDetails": "Details",
   "@componentsChatDishSuggestionCardDetails": {
@@ -406,76 +650,21 @@
       "error": {}
     }
   },
-  "componentsChatDishSuggestionCardHighCarb": "High carb dish",
-  "@componentsChatDishSuggestionCardHighCarb": {
-    "description": "Title for high carb dish"
-  },
-  "componentsChatDishSuggestionCardHighFat": "High fat dish",
-  "@componentsChatDishSuggestionCardHighFat": {
-    "description": "Title for high fat dish"
-  },
-  "componentsChatDishSuggestionCardHighProtein": "High protein dish",
-  "@componentsChatDishSuggestionCardHighProtein": {
-    "description": "Title for high protein dish"
-  },
   "componentsChatDishSuggestionCardLogDish": "Log Dish",
   "@componentsChatDishSuggestionCardLogDish": {
     "description": "Button text to log a dish"
-  },
-  "componentsChatDishSuggestionCardUnbalanced": "Unbalanced dish",
-  "@componentsChatDishSuggestionCardUnbalanced": {
-    "description": "Title for unbalanced dish"
-  },
-  "componentsChatMessageBubbleAssistant": "PlatePal Assistant",
-  "@componentsChatMessageBubbleAssistant": {
-    "description": "Label for the assistant in the message bubble"
-  },
-  "componentsChatMessageBubbleBotTag": "(bot)",
-  "@componentsChatMessageBubbleBotTag": {
-    "description": "Tag to identify the bot in the message bubble"
   },
   "componentsChatMessageBubbleClose": "Close",
   "@componentsChatMessageBubbleClose": {
     "description": "Close button text"
   },
+  "componentsChatMessageBubbleIngredients": "Ingredients",
+  "@componentsChatMessageBubbleIngredients": {
+    "description": "Ingredients data type"
+  },
   "componentsChatMessageBubbleMessageCopied": "Message copied to clipboard",
   "@componentsChatMessageBubbleMessageCopied": {
     "description": "Message copied success message"
-  },
-  "componentsChatMessageBubbleModificationAi": "{count} AI enhancements applied",
-  "@componentsChatMessageBubbleModificationAi": {
-    "description": "Message bubble hint for AI modifications",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "componentsChatMessageBubbleModificationAutomatic": "{count} automatic improvements applied",
-  "@componentsChatMessageBubbleModificationAutomatic": {
-    "description": "Message bubble hint for automatic modifications",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "componentsChatMessageBubbleModificationEmergency": "{count} emergency fixes applied",
-  "@componentsChatMessageBubbleModificationEmergency": {
-    "description": "Message bubble hint for emergency modifications",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "componentsChatMessageBubbleNoRecommendationsAvailable": "No recommendations available.",
-  "@componentsChatMessageBubbleNoRecommendationsAvailable": {
-    "description": "Text shown when no recommendations are available"
-  },
-  "componentsChatMessageBubbleRecommendation": "Recommendation",
-  "@componentsChatMessageBubbleRecommendation": {
-    "description": "Label for a recommendation in the message bubble"
   },
   "componentsChatMessageBubbleRetryMessage": "Retry",
   "@componentsChatMessageBubbleRetryMessage": {
@@ -485,14 +674,6 @@
   "@componentsChatMessageBubbleSelect": {
     "description": "Generic select button text"
   },
-  "componentsChatMessageBubbleSending": "Sending...",
-  "@componentsChatMessageBubbleSending": {
-    "description": "Text shown while a message is being sent"
-  },
-  "componentsChatMessageBubbleSuggestedDishes": "Suggested Dishes",
-  "@componentsChatMessageBubbleSuggestedDishes": {
-    "description": "Title for the suggested dishes section"
-  },
   "componentsChatMessageBubbleTapToViewAgentSteps": "Tap to view agent steps",
   "@componentsChatMessageBubbleTapToViewAgentSteps": {
     "description": "Agent steps tap instruction"
@@ -501,10 +682,6 @@
   "@componentsChatMessageBubbleYesterday": {
     "description": "Label for yesterday in date formatting"
   },
-  "componentsChatMessageBubbleYou": "You",
-  "@componentsChatMessageBubbleYou": {
-    "description": "Label for the user in the message bubble"
-  },
   "componentsChatNutritionAnalysisCardAddToMeals": "Add to Meals",
   "@componentsChatNutritionAnalysisCardAddToMeals": {
     "description": "Add to meals button text"
@@ -512,6 +689,10 @@
   "componentsChatNutritionAnalysisCardCookingInstructions": "Cooking Instructions",
   "@componentsChatNutritionAnalysisCardCookingInstructions": {
     "description": "Cooking instructions label"
+  },
+  "componentsChatNutritionAnalysisCardDishName": "Dish Name",
+  "@componentsChatNutritionAnalysisCardDishName": {
+    "description": "Dish name label"
   },
   "componentsChatNutritionAnalysisCardMealType": "Meal Type",
   "@componentsChatNutritionAnalysisCardMealType": {
@@ -529,22 +710,6 @@
   "@componentsChatQuickActionsQuickActions": {
     "description": "Quick actions section title"
   },
-  "componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogChangeAvatar": "Change Avatar",
-  "@componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogChangeAvatar": {
-    "description": "Change avatar button text"
-  },
-  "componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaved": "Profile saved successfully",
-  "@componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaved": {
-    "description": "Profile save success message"
-  },
-  "componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaveFailed": "Failed to save profile",
-  "@componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaveFailed": {
-    "description": "Profile save error message"
-  },
-  "componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogRemoveAvatar": "Remove Avatar",
-  "@componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogRemoveAvatar": {
-    "description": "Remove avatar button text"
-  },
   "componentsChatUserProfileCustomizationDialogEditUserProfile": "Edit User Profile",
   "@componentsChatUserProfileCustomizationDialogEditUserProfile": {
     "description": "Edit user profile dialog title"
@@ -553,9 +718,25 @@
   "@componentsChatUserProfileCustomizationDialogUsername": {
     "description": "Username field label"
   },
+  "componentsDishesDishCardDelete": "Delete",
+  "@componentsDishesDishCardDelete": {
+    "description": "Delete button text"
+  },
+  "componentsDishesDishCardEdit": "Edit",
+  "@componentsDishesDishCardEdit": {
+    "description": "Menu item text to edit"
+  },
+  "componentsDishesDishFormIngredientFormModalAddIngredient": "Add Ingredient",
+  "@componentsDishesDishFormIngredientFormModalAddIngredient": {
+    "description": "Button text to add ingredient"
+  },
   "componentsDishesDishFormIngredientFormModalEditIngredient": "Edit Ingredient",
   "@componentsDishesDishFormIngredientFormModalEditIngredient": {
     "description": "Edit Ingredient"
+  },
+  "componentsDishesDishFormIngredientFormModalGrams": "g",
+  "@componentsDishesDishFormIngredientFormModalGrams": {
+    "description": "g"
   },
   "componentsDishesDishFormIngredientFormModalIngredientName": "Ingredient Name",
   "@componentsDishesDishFormIngredientFormModalIngredientName": {
@@ -564,6 +745,10 @@
   "componentsDishesDishFormIngredientFormModalIngredientNamePlaceholder": "Enter ingredient name",
   "@componentsDishesDishFormIngredientFormModalIngredientNamePlaceholder": {
     "description": "Enter ingredient name"
+  },
+  "componentsDishesDishFormIngredientFormModalKcal": "kcal",
+  "@componentsDishesDishFormIngredientFormModalKcal": {
+    "description": "kcal"
   },
   "componentsDishesDishFormIngredientFormModalNutritionInformation": "Nutrition Information",
   "@componentsDishesDishFormIngredientFormModalNutritionInformation": {
@@ -593,14 +778,6 @@
   "@componentsDishesDishFormIngredientFormModalQuantityPlaceholder": {
     "description": "Enter quantity"
   },
-  "componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalGrams": "g",
-  "@componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalGrams": {
-    "description": "g"
-  },
-  "componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalKcal": "kcal",
-  "@componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalKcal": {
-    "description": "kcal"
-  },
   "componentsDishesDishFormSmartNutritionCardNutritionalInformation": "Nutritional Information",
   "@componentsDishesDishFormSmartNutritionCardNutritionalInformation": {
     "description": "Nutritional Information"
@@ -609,13 +786,17 @@
   "@componentsModalsDishLogModalAddNotes": {
     "description": "Placeholder text for notes field"
   },
+  "componentsModalsDishLogModalBreakfast": "Breakfast",
+  "@componentsModalsDishLogModalBreakfast": {
+    "description": "Breakfast meal type"
+  },
   "componentsModalsDishLogModalCalculatedNutrition": "Calculated Nutrition",
   "@componentsModalsDishLogModalCalculatedNutrition": {
     "description": "Label for calculated nutrition section"
   },
-  "componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories": "Calories",
-  "@componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories": {
-    "description": "Calories label"
+  "componentsModalsDishLogModalDinner": "Dinner",
+  "@componentsModalsDishLogModalDinner": {
+    "description": "Dinner meal type"
   },
   "componentsModalsDishLogModalDishLoggedSuccessfully": "Dish logged successfully!",
   "@componentsModalsDishLogModalDishLoggedSuccessfully": {
@@ -628,6 +809,10 @@
   "componentsModalsDishLogModalLogDishTitle": "Log Dish",
   "@componentsModalsDishLogModalLogDishTitle": {
     "description": "Title for the log dish modal"
+  },
+  "componentsModalsDishLogModalLunch": "Lunch",
+  "@componentsModalsDishLogModalLunch": {
+    "description": "Lunch meal type"
   },
   "componentsModalsDishLogModalNotes": "Notes",
   "@componentsModalsDishLogModalNotes": {
@@ -645,6 +830,10 @@
   "@componentsModalsDishLogModalSelectMealType": {
     "description": "Label for meal type selection"
   },
+  "componentsModalsDishLogModalSnack": "Snack",
+  "@componentsModalsDishLogModalSnack": {
+    "description": "Snack meal type"
+  },
   "componentsScannerBarcodeScannerBarcodeScanner": "Barcode Scanner",
   "@componentsScannerBarcodeScannerBarcodeScanner": {
     "description": "Barcode scanner title"
@@ -658,6 +847,10 @@
         "description": "The error message"
       }
     }
+  },
+  "componentsScannerBarcodeScannerOpenSettings": "Open Settings",
+  "@componentsScannerBarcodeScannerOpenSettings": {
+    "description": "Open settings button text"
   },
   "componentsScannerBarcodeScannerProductNotFound": "Product not found",
   "@componentsScannerBarcodeScannerProductNotFound": {
@@ -705,6 +898,10 @@
   "@componentsScannerProductSearchSearchProducts": {
     "description": "Placeholder text for product search"
   },
+  "componentsSharedErrorDisplayRetry": "Retry",
+  "@componentsSharedErrorDisplayRetry": {
+    "description": "Retry button text"
+  },
   "componentsUiCustomTabBarCalendar": "Calendar",
   "@componentsUiCustomTabBarCalendar": {
     "description": "Calendar label"
@@ -712,6 +909,14 @@
   "componentsUiCustomTabBarChat": "Chat",
   "@componentsUiCustomTabBarChat": {
     "description": "Chat label"
+  },
+  "componentsUiCustomTabBarMeals": "Meals",
+  "@componentsUiCustomTabBarMeals": {
+    "description": "Meals label"
+  },
+  "componentsUiCustomTabBarMenu": "Menu",
+  "@componentsUiCustomTabBarMenu": {
+    "description": "Menu label"
   },
   "providersChatProviderAiThinking": "AI is thinking...",
   "@providersChatProviderAiThinking": {
@@ -732,10 +937,6 @@
   "screensCalendarAiNutritionTip": "AI Nutrition Tip",
   "@screensCalendarAiNutritionTip": {
     "description": "Title for AI nutrition tips"
-  },
-  "screensCalendarComponentsCalendarCalendarDayDetailUnknownDish": "Unknown Dish",
-  "@screensCalendarComponentsCalendarCalendarDayDetailUnknownDish": {
-    "description": "Label for dish when name is not available"
   },
   "screensCalendarConfigureApiKeyForAiTips": "Please configure your OpenAI API key in settings to use AI tips",
   "@screensCalendarConfigureApiKeyForAiTips": {
@@ -781,10 +982,6 @@
   "@screensChatClearChatConfirmation": {
     "description": "Clear chat confirmation message"
   },
-  "screensChatComponentsChatBotProfileCustomizationDialogCancel": "Cancel",
-  "@screensChatComponentsChatBotProfileCustomizationDialogCancel": {
-    "description": "Cancel button text"
-  },
   "screensChatConfigureApiKeyButton": "Configure API Key",
   "@screensChatConfigureApiKeyButton": {
     "description": "Configure API key button text"
@@ -817,40 +1014,13 @@
   "@screensDishCreateCategory": {
     "description": "Category"
   },
-  "screensDishCreateComponentsChatBotProfileCustomizationDialogSave": "Save",
-  "@screensDishCreateComponentsChatBotProfileCustomizationDialogSave": {
-    "description": "Save button text"
-  },
-  "screensDishCreateComponentsChatChatInputErrorPickingImage": "Error picking image: {error}",
-  "@screensDishCreateComponentsChatChatInputErrorPickingImage": {
-    "description": "Error message when image picker fails",
-    "placeholders": {
-      "error": {}
-    }
-  },
-  "screensDishCreateComponentsChatChatInputScanBarcode": "Scan Barcode",
-  "@screensDishCreateComponentsChatChatInputScanBarcode": {
-    "description": "Scan barcode button text"
-  },
-  "screensDishCreateComponentsChatChatInputSearchProduct": "Search Product",
-  "@screensDishCreateComponentsChatChatInputSearchProduct": {
-    "description": "Search product button text"
-  },
-  "screensDishCreateComponentsChatMessageBubbleIngredients": "Ingredients",
-  "@screensDishCreateComponentsChatMessageBubbleIngredients": {
-    "description": "Ingredients data type"
-  },
-  "screensDishCreateComponentsChatNutritionAnalysisCardDishName": "Dish Name",
-  "@screensDishCreateComponentsChatNutritionAnalysisCardDishName": {
-    "description": "Dish name label"
-  },
-  "screensDishCreateComponentsDishesDishFormIngredientFormModalAddIngredient": "Add Ingredient",
-  "@screensDishCreateComponentsDishesDishFormIngredientFormModalAddIngredient": {
-    "description": "Button text to add ingredient"
-  },
   "screensDishCreateConfirmDeleteIngredient": "Are you sure you want to delete this ingredient?",
   "@screensDishCreateConfirmDeleteIngredient": {
     "description": "Are you sure you want to delete this ingredient?"
+  },
+  "screensDishCreateCreateDish": "Create Dish",
+  "@screensDishCreateCreateDish": {
+    "description": "Button text to create new dish"
   },
   "screensDishCreateDeleteIngredient": "Delete Ingredient",
   "@screensDishCreateDeleteIngredient": {
@@ -883,6 +1053,10 @@
   "screensDishCreateErrorSavingDish": "Error saving dish",
   "@screensDishCreateErrorSavingDish": {
     "description": "Error message for dish save failure"
+  },
+  "screensDishCreateFavorite": "Favorite",
+  "@screensDishCreateFavorite": {
+    "description": "Favorite toggle label"
   },
   "screensDishCreateGallery": "Gallery",
   "@screensDishCreateGallery": {
@@ -948,38 +1122,6 @@
   "@screensMealsAllCategories": {
     "description": "Filter option to show all categories"
   },
-  "screensMealsComponentsDishesDishCardDelete": "Delete",
-  "@screensMealsComponentsDishesDishCardDelete": {
-    "description": "Delete button text"
-  },
-  "screensMealsComponentsDishesDishCardEdit": "Edit",
-  "@screensMealsComponentsDishesDishCardEdit": {
-    "description": "Menu item text to edit"
-  },
-  "screensMealsComponentsModalsDishLogModalBreakfast": "Breakfast",
-  "@screensMealsComponentsModalsDishLogModalBreakfast": {
-    "description": "Breakfast meal type"
-  },
-  "screensMealsComponentsModalsDishLogModalDinner": "Dinner",
-  "@screensMealsComponentsModalsDishLogModalDinner": {
-    "description": "Dinner meal type"
-  },
-  "screensMealsComponentsModalsDishLogModalLunch": "Lunch",
-  "@screensMealsComponentsModalsDishLogModalLunch": {
-    "description": "Lunch meal type"
-  },
-  "screensMealsComponentsModalsDishLogModalSnack": "Snack",
-  "@screensMealsComponentsModalsDishLogModalSnack": {
-    "description": "Snack meal type"
-  },
-  "screensMealsComponentsSharedErrorDisplayRetry": "Retry",
-  "@screensMealsComponentsSharedErrorDisplayRetry": {
-    "description": "Retry button text"
-  },
-  "screensMealsComponentsUiCustomTabBarMeals": "Meals",
-  "@screensMealsComponentsUiCustomTabBarMeals": {
-    "description": "Meals label"
-  },
   "screensMealsCreateFirstDish": "Create your first dish to get started",
   "@screensMealsCreateFirstDish": {
     "description": "Empty state subtitle encouraging dish creation"
@@ -1030,14 +1172,6 @@
   "@screensMealsRemoveFromFavorites": {
     "description": "Menu item to remove dish from favorites"
   },
-  "screensMealsScreensDishCreateCreateDish": "Create Dish",
-  "@screensMealsScreensDishCreateCreateDish": {
-    "description": "Button text to create new dish"
-  },
-  "screensMealsScreensDishCreateFavorite": "Favorite",
-  "@screensMealsScreensDishCreateFavorite": {
-    "description": "Favorite toggle label"
-  },
   "screensMealsSearchDishes": "Search dishes...",
   "@screensMealsSearchDishes": {
     "description": "Placeholder text for dish search field"
@@ -1065,10 +1199,6 @@
   "screensMenuChatAgentOptions": "Chat Agent Options",
   "@screensMenuChatAgentOptions": {
     "description": "Chat agent options title"
-  },
-  "screensMenuComponentsUiCustomTabBarMenu": "Menu",
-  "@screensMenuComponentsUiCustomTabBarMenu": {
-    "description": "Menu label"
   },
   "screensMenuConfigureApiKey": "Configure your OpenAI API key",
   "@screensMenuConfigureApiKey": {
@@ -1514,10 +1644,6 @@
   "@screensSettingsImportProfileCompletionCm": {
     "description": "Centimeters unit"
   },
-  "screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField": "This field is required",
-  "@screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField": {
-    "description": "Required field validation message"
-  },
   "screensSettingsImportProfileCompletionEmail": "Email",
   "@screensSettingsImportProfileCompletionEmail": {
     "description": "Email field label"
@@ -1541,6 +1667,10 @@
   "screensSettingsImportProfileCompletionGender": "Gender",
   "@screensSettingsImportProfileCompletionGender": {
     "description": "Gender field label"
+  },
+  "screensSettingsImportProfileCompletionHeight": "Height",
+  "@screensSettingsImportProfileCompletionHeight": {
+    "description": "Height field label"
   },
   "screensSettingsImportProfileCompletionHeightRange": "Height must be between 100-250 cm",
   "@screensSettingsImportProfileCompletionHeightRange": {
@@ -1618,6 +1748,10 @@
   "@screensSettingsImportProfileCompletionVeryActive": {
     "description": "Very active activity level"
   },
+  "screensSettingsImportProfileCompletionWeight": "Weight",
+  "@screensSettingsImportProfileCompletionWeight": {
+    "description": "Weight field label"
+  },
   "screensSettingsImportProfileCompletionWeightRange": "Weight must be between 30-300 kg",
   "@screensSettingsImportProfileCompletionWeightRange": {
     "description": "Weight range validation message"
@@ -1626,21 +1760,9 @@
   "@screensSettingsImportProfileCompletionYears": {
     "description": "Years unit"
   },
-  "screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs": "Carbs",
-  "@screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs": {
-    "description": "Carbs label"
-  },
-  "screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat": "Fat",
-  "@screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat": {
-    "description": "Fat label"
-  },
-  "screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber": "Fiber",
-  "@screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber": {
-    "description": "Fiber nutrition label"
-  },
-  "screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein": "Protein",
-  "@screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein": {
-    "description": "Protein label"
+  "screensSettingsMacroCustomizationDiscardChanges": "Discard Changes",
+  "@screensSettingsMacroCustomizationDiscardChanges": {
+    "description": "Discard changes button text"
   },
   "screensSettingsMacroCustomizationMacroCustomization": "Macro Customization",
   "@screensSettingsMacroCustomizationMacroCustomization": {
@@ -1658,6 +1780,18 @@
   "@screensSettingsMacroCustomizationResetToDefaults": {
     "description": "Reset to default values button text"
   },
+  "screensSettingsMacroCustomizationSaveChanges": "Save Changes",
+  "@screensSettingsMacroCustomizationSaveChanges": {
+    "description": "Save changes button text"
+  },
+  "screensSettingsMacroCustomizationUnsavedChanges": "Unsaved Changes",
+  "@screensSettingsMacroCustomizationUnsavedChanges": {
+    "description": "Unsaved changes dialog title"
+  },
+  "screensSettingsMacroCustomizationUnsavedChangesMessage": "You have unsaved changes. Do you want to save them before leaving?",
+  "@screensSettingsMacroCustomizationUnsavedChangesMessage": {
+    "description": "Unsaved changes dialog message"
+  },
   "screensSettingsProfileSettingsAnalyzeTargets": "Analyze Targets",
   "@screensSettingsProfileSettingsAnalyzeTargets": {
     "description": "Button text to analyze calorie targets"
@@ -1665,10 +1799,6 @@
   "screensSettingsProfileSettingsBmi": "BMI",
   "@screensSettingsProfileSettingsBmi": {
     "description": "BMI label"
-  },
-  "screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings": "Open Settings",
-  "@screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings": {
-    "description": "Open settings button text"
   },
   "screensSettingsProfileSettingsConnectToHealth": "Connect to Health",
   "@screensSettingsProfileSettingsConnectToHealth": {
@@ -1761,22 +1891,6 @@
   "screensSettingsProfileSettingsResetAppTitle": "Reset Application Data",
   "@screensSettingsProfileSettingsResetAppTitle": {
     "description": "Title for reset app confirmation dialog"
-  },
-  "screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges": "Discard Changes",
-  "@screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges": {
-    "description": "Discard changes button text"
-  },
-  "screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges": "Save Changes",
-  "@screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges": {
-    "description": "Save changes button text"
-  },
-  "screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChanges": "Unsaved Changes",
-  "@screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChanges": {
-    "description": "Unsaved changes dialog title"
-  },
-  "screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChangesMessage": "You have unsaved changes. Do you want to save them before leaving?",
-  "@screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChangesMessage": {
-    "description": "Unsaved changes dialog message"
   },
   "screensSettingsProfileSettingsSyncHealthData": "Sync Health Data",
   "@screensSettingsProfileSettingsSyncHealthData": {
@@ -1955,14 +2069,6 @@
   "screensSettingsStatisticsRefresh": "Refresh",
   "@screensSettingsStatisticsRefresh": {
     "description": "Refresh button tooltip"
-  },
-  "screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight": "Height",
-  "@screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight": {
-    "description": "Height field label"
-  },
-  "screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight": "Weight",
-  "@screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight": {
-    "description": "Weight field label"
   },
   "screensSettingsStatisticsStatistics": "Statistics",
   "@screensSettingsStatisticsStatistics": {

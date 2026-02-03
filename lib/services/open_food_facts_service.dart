@@ -15,14 +15,20 @@ class OpenFoodFactsService {
   }) async {
     try {
       final encodedQuery = Uri.encodeComponent(query);
+      // Using search endpoint with required parameters for OFF API v2
       final url =
-          '$_baseUrl/search?search_terms=$encodedQuery&page=$page&page_size=$pageSize&fields=code,product_name,brands,image_url,image_front_url,quantity,nutriments';
+          '$_baseUrl/search?search_terms=$encodedQuery&page=$page&page_size=$pageSize&fields=code,product_name,product_name_en,brands,image_url,image_front_url,quantity,nutriments&json=true';
 
-      final response = await http.get(Uri.parse(url));
+      debugPrint('🔍 Searching Open Food Facts: $url');
+      final response = await http.get(
+        Uri.parse(url),
+        headers: {'User-Agent': 'PlatePalTracker - Android - Version 1.0'},
+      );
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body) as Map<String, dynamic>;
         final products = data['products'] as List<dynamic>? ?? [];
+        debugPrint('✅ Found ${products.length} products');
 
         return products
             .map((productData) => _parseProduct(productData))
@@ -30,9 +36,11 @@ class OpenFoodFactsService {
             .cast<Product>()
             .toList();
       } else {
+        debugPrint('❌ Search failed: HTTP ${response.statusCode}');
         throw Exception('Failed to search products: ${response.statusCode}');
       }
     } catch (e) {
+      debugPrint('❌ Search error: $e');
       throw Exception('Error searching products: $e');
     }
   }
