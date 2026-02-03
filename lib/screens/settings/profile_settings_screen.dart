@@ -574,19 +574,19 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
       context: context,
       builder:
           (context) => AlertDialog(
-            title: Text(l10n.screensSettingsMacroCustomizationUnsavedChanges),
-            content: Text(l10n.screensSettingsMacroCustomizationUnsavedChangesMessage),
+            title: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChanges),
+            content: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChangesMessage),
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: Text(l10n.screensSettingsMacroCustomizationDiscardChanges),
+                child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges),
               ),
               TextButton(
                 onPressed: () {
                   Navigator.of(context).pop(true);
                   _saveProfile();
                 },
-                child: Text(l10n.screensSettingsMacroCustomizationSaveChanges),
+                child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges),
               ),
             ],
           ),
@@ -660,7 +660,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
   String? _validateRequired(String? value, String fieldName) {
     final l10n = AppLocalizations.of(context);
     if (value == null || value.trim().isEmpty) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
     return null;
   }
@@ -668,7 +668,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
   String? _validateAge(String? value) {
     final l10n = AppLocalizations.of(context);
     if (value == null || value.trim().isEmpty) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
     final age = int.tryParse(value.trim());
     if (age == null || age < 13 || age > 120) {
@@ -680,11 +680,11 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
   String? _validateHeight(String? value) {
     final l10n = AppLocalizations.of(context);
     if (value == null || value.trim().isEmpty) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
     final height = double.tryParse(value.trim());
     if (height == null) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
 
     if (_selectedUnitSystem == 'metric') {
@@ -702,11 +702,11 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
   String? _validateWeight(String? value) {
     final l10n = AppLocalizations.of(context);
     if (value == null || value.trim().isEmpty) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
     final weight = double.tryParse(value.trim());
     if (weight == null) {
-      return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+      return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
     }
 
     if (_selectedUnitSystem == 'metric') {
@@ -755,7 +755,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
               IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: _isSaving ? null : _saveProfile,
-                tooltip: l10n.componentsChatBotProfileCustomizationDialogSave,
+                tooltip: l10n.screensDishCreateComponentsChatBotProfileCustomizationDialogSave,
               ),
           ],
         ),
@@ -794,7 +794,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                               _isSaving
                                   ? null
                                   : () => _showUnsavedChangesDialog(),
-                          child: Text(l10n.screensSettingsMacroCustomizationDiscardChanges),
+                          child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges),
                         ),
                       ),
                       const SizedBox(width: 16),
@@ -810,7 +810,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                                       strokeWidth: 2,
                                     ),
                                   )
-                                  : Text(l10n.screensSettingsMacroCustomizationSaveChanges),
+                                  : Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges),
                         ),
                       ),
                     ],
@@ -957,7 +957,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 Expanded(
                   child: _buildTextField(
                     controller: _heightController,
-                    label: '${l10n.screensSettingsImportProfileCompletionHeight} (${isMetric ? 'cm' : 'in'})',
+                    label: '${l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight} (${isMetric ? 'cm' : 'in'})',
                     icon: Icons.height,
                     keyboardType: TextInputType.number,
                     validator: _validateHeight,
@@ -967,7 +967,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 Expanded(
                   child: _buildTextField(
                     controller: _weightController,
-                    label: '${l10n.screensSettingsImportProfileCompletionWeight} (${isMetric ? 'kg' : 'lbs'})',
+                    label: '${l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight} (${isMetric ? 'kg' : 'lbs'})',
                     icon: Icons.monitor_weight,
                     keyboardType: TextInputType.number,
                     validator: _validateWeight,
@@ -1660,13 +1660,13 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
           content: Text(l10n.screensSettingsProfileSettingsHealthPermissionDeniedMessage),
           actions: <Widget>[
             TextButton(
-              child: Text(l10n.componentsChatBotProfileCustomizationDialogCancel),
+              child: Text(l10n.screensChatComponentsChatBotProfileCustomizationDialogCancel),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             ElevatedButton(
-              child: Text(l10n.componentsScannerBarcodeScannerOpenSettings),
+              child: Text(l10n.screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings),
               onPressed: () async {
                 Navigator.of(context).pop();
                 await _openHealthSettings();
@@ -1691,13 +1691,13 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
           content: Text(l10n.screensSettingsProfileSettingsHealthNotAvailableMessage),
           actions: <Widget>[
             TextButton(
-              child: Text(l10n.componentsChatBotProfileCustomizationDialogCancel),
+              child: Text(l10n.screensChatComponentsChatBotProfileCustomizationDialogCancel),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             ElevatedButton(
-              child: Text(l10n.componentsScannerBarcodeScannerOpenSettings),
+              child: Text(l10n.screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings),
               onPressed: () async {
                 Navigator.of(context).pop();
                 await _openHealthSettings();
@@ -1833,7 +1833,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(),
-                child: Text(l10n.componentsChatBotProfileCustomizationDialogCancel),
+                child: Text(l10n.screensChatComponentsChatBotProfileCustomizationDialogCancel),
               ),
               if (analysis.needsAdjustment)
                 ElevatedButton(

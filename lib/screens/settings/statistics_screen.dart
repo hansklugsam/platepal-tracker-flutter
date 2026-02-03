@@ -894,7 +894,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                   child: _buildStatItem(
                     context,
                     icon: Icons.monitor_weight,
-                    label: l10n.screensSettingsImportProfileCompletionWeight,
+                    label: l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight,
                     value:
                         displayWeight != null
                             ? '${displayWeight.toStringAsFixed(1)} $weightUnit'
@@ -905,7 +905,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                   child: _buildStatItem(
                     context,
                     icon: Icons.height,
-                    label: l10n.screensSettingsImportProfileCompletionHeight,
+                    label: l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight,
                     value:
                         displayHeight != null
                             ? '${displayHeight.toStringAsFixed(1)} $heightUnit'

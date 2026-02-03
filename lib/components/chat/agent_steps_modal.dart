@@ -737,7 +737,7 @@ class AgentStepsModal extends StatelessWidget {
               icon: const Icon(Icons.copy, size: 18),
               onPressed: () => _copyToClipboard(context, jsonString),
               tooltip:
-                  AppLocalizations.of(context).componentsCommonCopyToClipboard,
+                  AppLocalizations.of(context).componentsChatAgentStepsModalComponentsCommonCopyToClipboard,
             ),
           ],
         ),
@@ -1317,7 +1317,7 @@ class AgentStepsModal extends StatelessWidget {
                     ),
                 icon: const Icon(Icons.copy, size: 16),
                 label: Text(
-                  AppLocalizations.of(context).componentsCommonCopyToClipboard,
+                  AppLocalizations.of(context).componentsChatAgentStepsModalComponentsCommonCopyToClipboard,
                 ),
                 style: TextButton.styleFrom(
                   padding: const EdgeInsets.symmetric(

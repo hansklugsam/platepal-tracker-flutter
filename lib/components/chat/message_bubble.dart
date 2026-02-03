@@ -161,8 +161,7 @@ class MessageBubble extends StatelessWidget {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              localizations
-                                  .componentsChatMessageBubbleRetryMessage,
+                              localizations.componentsChatMessageBubbleRetryMessage,
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onError,
                                 fontWeight: FontWeight.w500,
@@ -200,8 +199,7 @@ class MessageBubble extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      localizations
-                          .componentsChatMessageBubbleTapToViewAgentSteps,
+                      localizations.componentsChatMessageBubbleTapToViewAgentSteps,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: theme.colorScheme.primary,
                         fontWeight: FontWeight.w500,
@@ -237,8 +235,7 @@ class MessageBubble extends StatelessWidget {
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          localizations
-                              .componentsChatMessageBubbleSuggestedDishes,
+                          localizations.componentsChatMessageBubbleSuggestedDishes,
                           style: theme.textTheme.titleSmall?.copyWith(
                             color: theme.colorScheme.primary,
                             fontWeight: FontWeight.w600,
@@ -280,8 +277,7 @@ class MessageBubble extends StatelessWidget {
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          localizations
-                              .componentsChatMessageBubbleRecommendation,
+                          localizations.componentsChatMessageBubbleRecommendation,
                           style: theme.textTheme.titleSmall?.copyWith(
                             color: theme.colorScheme.secondary,
                             fontWeight: FontWeight.w600,
@@ -604,21 +600,21 @@ class MessageBubble extends StatelessWidget {
                   const SizedBox(height: 12),
                 ],
                 Text(
-                  '${localizations.componentsCalendarMacroSummaryCalories}: ${dish.totalNutrition.calories.toStringAsFixed(0)}',
+                  '${localizations.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories}: ${dish.totalNutrition.calories.toStringAsFixed(0)}',
                 ),
                 Text(
-                  '${localizations.componentsCalendarMacroSummaryProtein}: ${dish.totalNutrition.protein.toStringAsFixed(1)}g',
+                  '${localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein}: ${dish.totalNutrition.protein.toStringAsFixed(1)}g',
                 ),
                 Text(
-                  '${localizations.componentsCalendarMacroSummaryCarbs}: ${dish.totalNutrition.carbs.toStringAsFixed(1)}g',
+                  '${localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs}: ${dish.totalNutrition.carbs.toStringAsFixed(1)}g',
                 ),
                 Text(
-                  '${localizations.componentsCalendarMacroSummaryFat}: ${dish.totalNutrition.fat.toStringAsFixed(1)}g',
+                  '${localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat}: ${dish.totalNutrition.fat.toStringAsFixed(1)}g',
                 ),
                 if (dish.ingredients.isNotEmpty) ...[
                   const SizedBox(height: 12),
                   Text(
-                    '${localizations.componentsChatMessageBubbleIngredients}:',
+                    '${localizations.screensDishCreateComponentsChatMessageBubbleIngredients}:',
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   ...dish.ingredients.map((ing) => Text('• ${ing.name}')),

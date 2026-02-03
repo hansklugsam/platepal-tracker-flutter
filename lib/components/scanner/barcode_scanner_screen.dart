@@ -209,7 +209,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen>
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        child: Text(localizations.componentsScannerBarcodeScannerOpenSettings),
+                        child: Text(localizations.screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings),
                       ),
                     ],
                   ],

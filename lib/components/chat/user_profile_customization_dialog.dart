@@ -53,12 +53,12 @@ class _UserProfileCustomizationDialogState
             children: [
               ListTile(
                 leading: const Icon(Icons.camera_alt),
-                title: Text(l10n.componentsChatBotProfileCustomizationDialogTakePhoto),
+                title: Text(l10n.componentsChatChatInputComponentsChatBotProfileCustomizationDialogTakePhoto),
                 onTap: () => Navigator.pop(context, ImageSource.camera),
               ),
               ListTile(
                 leading: const Icon(Icons.photo_library),
-                title: Text(l10n.componentsChatBotProfileCustomizationDialogChooseFromGallery),
+                title: Text(l10n.componentsChatChatInputComponentsChatBotProfileCustomizationDialogChooseFromGallery),
                 onTap: () => Navigator.pop(context, ImageSource.gallery),
               ),
             ],
@@ -87,7 +87,7 @@ class _UserProfileCustomizationDialogState
     if (_usernameController.text.trim().isEmpty) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text(l10n.componentsChatBotProfileCustomizationDialogRequiredField)));
+      ).showSnackBar(SnackBar(content: Text(l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField)));
       return;
     }
 
@@ -108,18 +108,18 @@ class _UserProfileCustomizationDialogState
         widget.onProfileUpdated(updatedProfile);
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatBotProfileCustomizationDialogProfileSaved)));
+        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaved)));
         Navigator.of(context).pop();
       } else if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatBotProfileCustomizationDialogProfileSaveFailed)));
+        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaveFailed)));
       }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatBotProfileCustomizationDialogProfileSaveFailed)));
+        ).showSnackBar(SnackBar(content: Text(l10n.componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaveFailed)));
       }
     } finally {
       if (mounted) {
@@ -179,14 +179,14 @@ class _UserProfileCustomizationDialogState
             TextButton.icon(
               onPressed: _pickImage,
               icon: const Icon(Icons.camera_alt, size: 18),
-              label: Text(l10n.componentsChatBotProfileCustomizationDialogChangeAvatar),
+              label: Text(l10n.componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogChangeAvatar),
             ),
             if (_avatarUrl != null) ...[
               const SizedBox(width: 8),
               TextButton.icon(
                 onPressed: _removeAvatar,
                 icon: const Icon(Icons.delete, size: 18),
-                label: Text(l10n.componentsChatBotProfileCustomizationDialogRemoveAvatar),
+                label: Text(l10n.componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogRemoveAvatar),
                 style: TextButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.error,
                 ),
@@ -235,7 +235,7 @@ class _UserProfileCustomizationDialogState
       actions: [
         TextButton(
           onPressed: _isLoading ? null : () => Navigator.of(context).pop(),
-          child: Text(l10n.componentsChatBotProfileCustomizationDialogCancel),
+          child: Text(l10n.screensChatComponentsChatBotProfileCustomizationDialogCancel),
         ),
         ElevatedButton(
           onPressed: _isLoading ? null : _saveProfile,
@@ -251,7 +251,7 @@ class _UserProfileCustomizationDialogState
                       ),
                     ),
                   )
-                  : Text(l10n.componentsChatBotProfileCustomizationDialogSave),
+                  : Text(l10n.screensDishCreateComponentsChatBotProfileCustomizationDialogSave),
         ),
       ],
     );

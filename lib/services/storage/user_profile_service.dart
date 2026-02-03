@@ -20,6 +20,28 @@ class UserProfileService {
       return null;
     }
 
+    return _buildUserProfileFromMaps(userMaps.first);
+  }
+
+  // Get all user profiles
+  Future<List<UserProfile>> getAllUserProfiles() async {
+    final db = await _databaseService.database;
+    final List<Map<String, dynamic>> userMaps = await db.query('user_profiles');
+    
+    final List<UserProfile> profiles = [];
+    for (final map in userMaps) {
+      final profile = await _buildUserProfileFromMaps(map);
+      if (profile != null) {
+        profiles.add(profile);
+      }
+    }
+    return profiles;
+  }
+
+  Future<UserProfile?> _buildUserProfileFromMaps(Map<String, dynamic> userMap) async {
+    final db = await _databaseService.database;
+    final userId = userMap['id'] as String;
+
     // Get the fitness goals
     final List<Map<String, dynamic>> goalsMaps = await db.query(
       'fitness_goals',
@@ -42,12 +64,12 @@ class UserProfileService {
     } // Construct fitness goals (always required)
     final FitnessGoals goals = FitnessGoals(
       goal: goalsMaps.first['goal'] as String,
-      targetWeight: goalsMaps.first['target_weight'] as double,
-      targetCalories: goalsMaps.first['target_calories'] as double,
-      targetProtein: goalsMaps.first['target_protein'] as double,
-      targetCarbs: goalsMaps.first['target_carbs'] as double,
-      targetFat: goalsMaps.first['target_fat'] as double,
-      targetFiber: (goalsMaps.first['target_fiber'] as double?) ?? 25.0,
+      targetWeight: (goalsMaps.first['target_weight'] as num).toDouble(),
+      targetCalories: (goalsMaps.first['target_calories'] as num).toDouble(),
+      targetProtein: (goalsMaps.first['target_protein'] as num).toDouble(),
+      targetCarbs: (goalsMaps.first['target_carbs'] as num).toDouble(),
+      targetFat: (goalsMaps.first['target_fat'] as num).toDouble(),
+      targetFiber: (goalsMaps.first['target_fiber'] as num?)?.toDouble() ?? 25.0,
     );
 
     // Construct dietary preferences (optional)
@@ -93,19 +115,19 @@ class UserProfileService {
 
     // Construct and return the full user profile
     return UserProfile(
-      id: userMaps.first['id'] as String,
-      name: userMaps.first['name'] as String,
-      email: userMaps.first['email'] as String,
-      age: userMaps.first['age'] as int,
-      gender: userMaps.first['gender'] as String,
-      height: userMaps.first['height'] as double,
-      weight: userMaps.first['weight'] as double,
-      activityLevel: userMaps.first['activity_level'] as String,
+      id: userMap['id'] as String,
+      name: userMap['name'] as String,
+      email: userMap['email'] as String,
+      age: userMap['age'] as int,
+      gender: userMap['gender'] as String,
+      height: (userMap['height'] as num).toDouble(),
+      weight: (userMap['weight'] as num).toDouble(),
+      activityLevel: userMap['activity_level'] as String,
       goals: goals,
       preferences: preferences,
-      preferredUnit: userMaps.first['preferred_unit'] as String,
-      createdAt: DateTime.parse(userMaps.first['created_at'] as String),
-      updatedAt: DateTime.parse(userMaps.first['updated_at'] as String),
+      preferredUnit: userMap['preferred_unit'] as String,
+      createdAt: DateTime.parse(userMap['created_at'] as String),
+      updatedAt: DateTime.parse(userMap['updated_at'] as String),
     );
   }
 

@@ -230,7 +230,7 @@ class _MacroSummaryState extends State<MacroSummary> {
       children: [
         Expanded(
           child: _buildMacroBar(
-            label: l10n.componentsCalendarMacroSummaryCalories,
+            label: l10n.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories,
             current: widget.calories,
             target: maxCalories,
             unit: '',
@@ -303,7 +303,7 @@ class _MacroSummaryState extends State<MacroSummary> {
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(),
-                child: Text(l10n.componentsCommonOk),
+                child: Text(l10n.componentsCalendarMacroSummaryComponentsCommonOk),
               ),
             ],
           ),
@@ -385,7 +385,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                     // Quick stats when collapsed
                     if (!_isExpanded) ...[
                       Text(
-                        '${widget.calories.toStringAsFixed(0)} ${l10n.componentsCalendarMacroSummaryCalories}',
+                        '${widget.calories.toStringAsFixed(0)} ${l10n.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories}',
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: colorScheme.onSurfaceVariant,
                         ),
@@ -417,7 +417,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
                     // Protein
                     _buildMacroBar(
-                      label: l10n.componentsCalendarMacroSummaryProtein,
+                      label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                       current: widget.protein,
                       target: widget.proteinTarget,
                       unit: 'g',
@@ -431,7 +431,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
                     // Carbs
                     _buildMacroBar(
-                      label: l10n.componentsCalendarMacroSummaryCarbs,
+                      label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                       current: widget.carbs,
                       target: widget.carbsTarget,
                       unit: 'g',
@@ -442,7 +442,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
                     // Fat
                     _buildMacroBar(
-                      label: l10n.componentsCalendarMacroSummaryFat,
+                      label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                       current: widget.fat,
                       target: widget.fatTarget,
                       unit: 'g',
@@ -456,7 +456,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                             widget.fiberTarget! > 0)) ...[
                       const SizedBox(height: 12),
                       _buildMacroBar(
-                        label: l10n.componentsCalendarMacroSummaryFiber,
+                        label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber,
                         current: widget.fiber,
                         target: widget.fiberTarget,
                         unit: 'g',
@@ -475,7 +475,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                   children: [
                     Expanded(
                       child: _buildCompactMacroItem(
-                        l10n.componentsCalendarMacroSummaryCalories,
+                        l10n.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories,
                         widget.calories,
                         widget.calorieTarget,
                         _getCaloriesColor(
@@ -488,7 +488,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: _buildCompactMacroItem(
-                        l10n.componentsCalendarMacroSummaryProtein,
+                        l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                         widget.protein,
                         widget.proteinTarget,
                         _getProteinColor(widget.protein, widget.proteinTarget),
@@ -498,7 +498,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: _buildCompactMacroItem(
-                        l10n.componentsCalendarMacroSummaryCarbs,
+                        l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                         widget.carbs,
                         widget.carbsTarget,
                         _getCarbsColor(widget.carbs, widget.carbsTarget),
@@ -508,7 +508,7 @@ class _MacroSummaryState extends State<MacroSummary> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: _buildCompactMacroItem(
-                        l10n.componentsCalendarMacroSummaryFat,
+                        l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                         widget.fat,
                         widget.fatTarget,
                         _getFatColor(widget.fat, widget.fatTarget),
@@ -575,7 +575,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
             // Calories
             _buildMacroBar(
-              label: l10n.componentsCalendarMacroSummaryCalories,
+              label: l10n.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories,
               current: widget.calories,
               target: widget.calorieTarget,
               unit: 'kcal',
@@ -585,7 +585,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
             // Protein
             _buildMacroBar(
-              label: l10n.componentsCalendarMacroSummaryProtein,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
               current: widget.protein,
               target: widget.proteinTarget,
               unit: 'g',
@@ -595,7 +595,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
             // Carbs
             _buildMacroBar(
-              label: l10n.componentsCalendarMacroSummaryCarbs,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
               current: widget.carbs,
               target: widget.carbsTarget,
               unit: 'g',
@@ -605,7 +605,7 @@ class _MacroSummaryState extends State<MacroSummary> {
 
             // Fat
             _buildMacroBar(
-              label: l10n.componentsCalendarMacroSummaryFat,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
               current: widget.fat,
               target: widget.fatTarget,
               unit: 'g',
@@ -617,7 +617,7 @@ class _MacroSummaryState extends State<MacroSummary> {
             if (widget.fiber > 0 ||
                 (widget.fiberTarget != null && widget.fiberTarget! > 0))
               _buildMacroBar(
-                label: l10n.componentsCalendarMacroSummaryFiber,
+                label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber,
                 current: widget.fiber,
                 target: widget.fiberTarget,
                 unit: 'g',

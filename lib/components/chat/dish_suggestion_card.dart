@@ -488,7 +488,7 @@ class _DishSuggestionCardState extends State<DishSuggestionCard>
             ? '${l10n.componentsChatDishSuggestionCardDetails} ${_nutritionProfile.emoji}'
             : l10n.screensDishCreateEditDish;
       } else {
-        return l10n.screensDishCreateCreateDish;
+        return l10n.screensMealsScreensDishCreateCreateDish;
       }
     } else {
       // For new dishes
@@ -497,7 +497,7 @@ class _DishSuggestionCardState extends State<DishSuggestionCard>
             ? '${l10n.componentsChatDishSuggestionCardDetails} ${_nutritionProfile.emoji}'
             : l10n.screensDishCreateEditDish;
       } else {
-        return l10n.screensDishCreateCreateDish;
+        return l10n.screensMealsScreensDishCreateCreateDish;
       }
     }
   }
@@ -537,7 +537,7 @@ class _DishSuggestionCardState extends State<DishSuggestionCard>
       if (_dishExists) {
         return l10n.screensMealsNoDishesCreated;
       } else {
-        return l10n.screensDishCreateCreateDish;
+        return l10n.screensMealsScreensDishCreateCreateDish;
       }
     }
   }

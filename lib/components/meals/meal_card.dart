@@ -116,7 +116,7 @@ class MealCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Text(
-                      '${totalCalories.round()} ${localizations.componentsCalendarMacroSummaryCalories.toLowerCase()}',
+                      '${totalCalories.round()} ${localizations.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories.toLowerCase()}',
                       style: theme.textTheme.labelMedium?.copyWith(
                         color: theme.colorScheme.onPrimaryContainer,
                         fontWeight: FontWeight.w600,
@@ -132,7 +132,7 @@ class MealCard extends StatelessWidget {
                 children: [
                   _buildNutritionInfo(
                     context,
-                    localizations.componentsCalendarMacroSummaryProtein,
+                    localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                     (mealLog.dish.nutrition.protein * mealLog.servingSize)
                         .toStringAsFixed(1),
                     'g',
@@ -140,7 +140,7 @@ class MealCard extends StatelessWidget {
                   const SizedBox(width: 16),
                   _buildNutritionInfo(
                     context,
-                    localizations.componentsCalendarMacroSummaryCarbs,
+                    localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                     (mealLog.dish.nutrition.carbs * mealLog.servingSize)
                         .toStringAsFixed(1),
                     'g',
@@ -148,7 +148,7 @@ class MealCard extends StatelessWidget {
                   const SizedBox(width: 16),
                   _buildNutritionInfo(
                     context,
-                    localizations.componentsCalendarMacroSummaryFat,
+                    localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                     (mealLog.dish.nutrition.fat * mealLog.servingSize)
                         .toStringAsFixed(1),
                     'g',

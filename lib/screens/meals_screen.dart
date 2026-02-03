@@ -121,7 +121,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(localizations.componentsUiCustomTabBarMeals),
+        title: Text(localizations.screensMealsComponentsUiCustomTabBarMeals),
         backgroundColor: theme.colorScheme.surface,
         foregroundColor: theme.colorScheme.onSurface,
         elevation: 0,
@@ -191,13 +191,13 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                       children: [
                         _buildFilterChip(localizations.screensMealsAllCategories, 'all'),
                         const SizedBox(width: 8),
-                        _buildFilterChip(localizations.componentsModalsDishLogModalBreakfast, 'breakfast'),
+                        _buildFilterChip(localizations.screensMealsComponentsModalsDishLogModalBreakfast, 'breakfast'),
                         const SizedBox(width: 8),
-                        _buildFilterChip(localizations.componentsModalsDishLogModalLunch, 'lunch'),
+                        _buildFilterChip(localizations.screensMealsComponentsModalsDishLogModalLunch, 'lunch'),
                         const SizedBox(width: 8),
-                        _buildFilterChip(localizations.componentsModalsDishLogModalDinner, 'dinner'),
+                        _buildFilterChip(localizations.screensMealsComponentsModalsDishLogModalDinner, 'dinner'),
                         const SizedBox(width: 8),
-                        _buildFilterChip(localizations.componentsModalsDishLogModalSnack, 'snack'),
+                        _buildFilterChip(localizations.screensMealsComponentsModalsDishLogModalSnack, 'snack'),
                       ],
                     ),
                   ),
@@ -213,7 +213,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
       floatingActionButton: FloatingActionButton(
         heroTag: "meals_fab", // Unique hero tag to avoid conflicts
         onPressed: _createNewDish,
-        tooltip: localizations.screensDishCreateCreateDish,
+        tooltip: localizations.screensMealsScreensDishCreateCreateDish,
         child: const Icon(Icons.add),
       ),
     );
@@ -284,7 +284,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _loadDishes,
-                    child: Text(localizations.componentsSharedErrorDisplayRetry),
+                    child: Text(localizations.screensMealsComponentsSharedErrorDisplayRetry),
                   ),
                 ],
               ),
@@ -306,7 +306,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                 title: localizations.screensMealsNoDishesCreated,
                 subtitle: localizations.screensMealsCreateFirstDish,
                 onAction: _createNewDish,
-                actionLabel: localizations.screensDishCreateCreateDish,
+                actionLabel: localizations.screensMealsScreensDishCreateCreateDish,
               ),
             ),
           ],
@@ -499,7 +499,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                               ),
                               const SizedBox(width: 2),
                               Text(
-                                localizations.screensDishCreateFavorite,
+                                localizations.screensMealsScreensDishCreateFavorite,
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.error,
                                   fontSize: 11,
@@ -546,7 +546,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                             children: [
                               const Icon(Icons.edit, size: 18),
                               const SizedBox(width: 8),
-                              Text(localizations.componentsDishesDishCardEdit),
+                              Text(localizations.screensMealsComponentsDishesDishCardEdit),
                             ],
                           ),
                         ),
@@ -580,7 +580,7 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
                               ),
                               const SizedBox(width: 8),
                               Text(
-                                localizations.componentsDishesDishCardDelete,
+                                localizations.screensMealsComponentsDishesDishCardDelete,
                                 style: TextStyle(
                                   color: theme.colorScheme.error,
                                 ),
@@ -706,14 +706,14 @@ class _MealsScreenState extends State<MealsScreen> with WidgetsBindingObserver {
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: Text(AppLocalizations.of(context).componentsChatBotProfileCustomizationDialogCancel),
+                child: Text(AppLocalizations.of(context).screensChatComponentsChatBotProfileCustomizationDialogCancel),
               ),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
                 style: TextButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.error,
                 ),
-                child: Text(AppLocalizations.of(context).componentsDishesDishCardDelete),
+                child: Text(AppLocalizations.of(context).screensMealsComponentsDishesDishCardDelete),
               ),
             ],
           ),

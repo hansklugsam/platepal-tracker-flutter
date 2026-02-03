@@ -1,10 +1,12 @@
+import 'dish_models.dart';
+
 class Dish {
   final String id;
   final String name;
   final String? description;
   final String? imageUrl;
   final List<Ingredient> ingredients;
-  final NutritionInfo nutrition;
+  final BasicNutrition nutrition;
   final DateTime createdAt;
   final DateTime updatedAt;
   final bool isFavorite;
@@ -24,15 +26,15 @@ class Dish {
   });
   factory Dish.fromJson(Map<String, dynamic> json) {
     // Handle nutrition data - can be nested object or direct fields
-    NutritionInfo nutrition;
+    BasicNutrition nutrition;
     if (json['nutrition'] != null &&
         json['nutrition'] is Map<String, dynamic>) {
-      nutrition = NutritionInfo.fromJson(
+      nutrition = BasicNutrition.fromJson(
         json['nutrition'] as Map<String, dynamic>,
       );
     } else {
       // Handle direct nutrition fields in dish object
-      nutrition = NutritionInfo(
+      nutrition = BasicNutrition(
         calories: (json['calories'] as num?)?.toDouble() ?? 0.0,
         protein: (json['protein'] as num?)?.toDouble() ?? 0.0,
         carbs: (json['carbs'] as num?)?.toDouble() ?? 0.0,
@@ -81,7 +83,7 @@ class Dish {
     String? description,
     String? imageUrl,
     List<Ingredient>? ingredients,
-    NutritionInfo? nutrition,
+    BasicNutrition? nutrition,
     DateTime? createdAt,
     DateTime? updatedAt,
     bool? isFavorite,
@@ -107,7 +109,7 @@ class Ingredient {
   final String name;
   final double amount;
   final String unit;
-  final NutritionInfo? nutrition;
+  final BasicNutrition? nutrition;
   final String? barcode;
 
   const Ingredient({
@@ -126,7 +128,7 @@ class Ingredient {
       unit: json['unit'] as String,
       nutrition:
           json['nutrition'] != null
-              ? NutritionInfo.fromJson(
+              ? BasicNutrition.fromJson(
                 json['nutrition'] as Map<String, dynamic>,
               )
               : null,
@@ -142,49 +144,6 @@ class Ingredient {
       'unit': unit,
       'nutrition': nutrition?.toJson(),
       'barcode': barcode,
-    };
-  }
-}
-
-class NutritionInfo {
-  final double calories;
-  final double protein;
-  final double carbs;
-  final double fat;
-  final double fiber;
-  final double sugar;
-  final double sodium;
-
-  const NutritionInfo({
-    required this.calories,
-    required this.protein,
-    required this.carbs,
-    required this.fat,
-    this.fiber = 0.0,
-    this.sugar = 0.0,
-    this.sodium = 0.0,
-  });
-  factory NutritionInfo.fromJson(Map<String, dynamic> json) {
-    return NutritionInfo(
-      calories: (json['calories'] as num?)?.toDouble() ?? 0.0,
-      protein: (json['protein'] as num?)?.toDouble() ?? 0.0,
-      carbs: (json['carbs'] as num?)?.toDouble() ?? 0.0,
-      fat: (json['fat'] as num?)?.toDouble() ?? 0.0,
-      fiber: (json['fiber'] as num?)?.toDouble() ?? 0.0,
-      sugar: (json['sugar'] as num?)?.toDouble() ?? 0.0,
-      sodium: (json['sodium'] as num?)?.toDouble() ?? 0.0,
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'calories': calories,
-      'protein': protein,
-      'carbs': carbs,
-      'fat': fat,
-      'fiber': fiber,
-      'sugar': sugar,
-      'sodium': sodium,
     };
   }
 }

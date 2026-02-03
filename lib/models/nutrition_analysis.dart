@@ -1,7 +1,9 @@
+import 'dish_models.dart';
+
 class NutritionAnalysis {
   final String dishName;
   final List<String> ingredients;
-  final NutritionInfo nutritionInfo;
+  final BasicNutrition nutritionInfo;
   final String? servingSize;
   final String? cookingInstructions;
   final String? mealType;
@@ -33,57 +35,13 @@ class NutritionAnalysis {
     return NutritionAnalysis(
       dishName: json['dishName'] as String,
       ingredients: (json['ingredients'] as List<dynamic>).cast<String>(),
-      nutritionInfo: NutritionInfo.fromJson(
+      nutritionInfo: BasicNutrition.fromJson(
         json['nutritionInfo'] as Map<String, dynamic>,
       ),
       servingSize: json['servingSize'] as String?,
       cookingInstructions: json['cookingInstructions'] as String?,
       mealType: json['mealType'] as String?,
       confidence: (json['confidence'] as num?)?.toDouble() ?? 1.0,
-    );
-  }
-}
-
-class NutritionInfo {
-  final double calories;
-  final double protein;
-  final double carbs;
-  final double fat;
-  final double fiber;
-  final double sugar;
-  final double sodium;
-
-  const NutritionInfo({
-    required this.calories,
-    required this.protein,
-    required this.carbs,
-    required this.fat,
-    this.fiber = 0.0,
-    this.sugar = 0.0,
-    this.sodium = 0.0,
-  });
-
-  Map<String, dynamic> toJson() {
-    return {
-      'calories': calories,
-      'protein': protein,
-      'carbs': carbs,
-      'fat': fat,
-      'fiber': fiber,
-      'sugar': sugar,
-      'sodium': sodium,
-    };
-  }
-
-  factory NutritionInfo.fromJson(Map<String, dynamic> json) {
-    return NutritionInfo(
-      calories: (json['calories'] as num).toDouble(),
-      protein: (json['protein'] as num).toDouble(),
-      carbs: (json['carbs'] as num).toDouble(),
-      fat: (json['fat'] as num).toDouble(),
-      fiber: (json['fiber'] as num?)?.toDouble() ?? 0.0,
-      sugar: (json['sugar'] as num?)?.toDouble() ?? 0.0,
-      sodium: (json['sodium'] as num?)?.toDouble() ?? 0.0,
     );
   }
 }

@@ -12,7 +12,7 @@ class MenuScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context).componentsUiCustomTabBarMenu),
+        title: Text(AppLocalizations.of(context).screensMenuComponentsUiCustomTabBarMenu),
         backgroundColor: Theme.of(context).colorScheme.surface,
         foregroundColor: Theme.of(context).colorScheme.onSurface,
       ),

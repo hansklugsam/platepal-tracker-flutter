@@ -258,7 +258,7 @@ class _ExportDataScreenState extends State<ExportDataScreen> {
         subtitle = 'User profile and preferences';
         break;
       case DataType.ingredients:
-        title = AppLocalizations.of(context).componentsChatMessageBubbleIngredients;
+        title = AppLocalizations.of(context).screensDishCreateComponentsChatMessageBubbleIngredients;
         subtitle = 'Ingredient database';
         break;
       case DataType.supplements:

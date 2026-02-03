@@ -22,7 +22,7 @@ class CustomTabBar extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           icon: const Icon(Icons.restaurant),
-          label: AppLocalizations.of(context).componentsUiCustomTabBarMeals,
+          label: AppLocalizations.of(context).screensMealsComponentsUiCustomTabBarMeals,
         ),
         BottomNavigationBarItem(
           icon: const Icon(Icons.calendar_today),
@@ -34,7 +34,7 @@ class CustomTabBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: const Icon(Icons.menu),
-          label: AppLocalizations.of(context).componentsUiCustomTabBarMenu,
+          label: AppLocalizations.of(context).screensMenuComponentsUiCustomTabBarMenu,
         ),
       ],
     );

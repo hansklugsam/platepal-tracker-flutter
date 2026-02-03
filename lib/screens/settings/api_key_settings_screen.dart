@@ -411,8 +411,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
                 child: Text(
-                  localizations
-                      .componentsChatBotProfileCustomizationDialogCancel,
+                  localizations.screensChatComponentsChatBotProfileCustomizationDialogCancel,
                 ),
               ),
               TextButton(
@@ -493,8 +492,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                           ),
                           const SizedBox(width: 8),
                           Text(
-                            localizations
-                                .screensSettingsApiKeySettingsAboutOpenAiApiKey,
+                            localizations.screensSettingsApiKeySettingsAboutOpenAiApiKey,
                             style: Theme.of(context).textTheme.titleMedium
                                 ?.copyWith(fontWeight: FontWeight.w600),
                           ),
@@ -502,14 +500,12 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        localizations
-                            .screensSettingsApiKeySettingsApiKeyDescription,
+                        localizations.screensSettingsApiKeySettingsApiKeyDescription,
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        localizations
-                            .screensSettingsApiKeySettingsApiKeyBulletPoints,
+                        localizations.screensSettingsApiKeySettingsApiKeyBulletPoints,
                         style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Theme.of(context).colorScheme.outline,
                         ),
@@ -533,8 +529,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                localizations
-                                    .screensSettingsApiKeySettingsApiKeyConfigured,
+                                localizations.screensSettingsApiKeySettingsApiKeyConfigured,
                                 style: Theme.of(
                                   context,
                                 ).textTheme.titleSmall?.copyWith(
@@ -543,8 +538,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                                 ),
                               ),
                               Text(
-                                localizations
-                                    .screensSettingsApiKeySettingsAiFeaturesEnabled,
+                                localizations.screensSettingsApiKeySettingsAiFeaturesEnabled,
                                 style: Theme.of(context).textTheme.bodySmall
                                     ?.copyWith(color: Colors.green.shade600),
                               ),
@@ -644,11 +638,9 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                 },
                 decoration: InputDecoration(
                   hintText:
-                      localizations
-                          .screensSettingsApiKeySettingsApiKeyPlaceholder,
+                      localizations.screensSettingsApiKeySettingsApiKeyPlaceholder,
                   helperText:
-                      localizations
-                          .screensSettingsApiKeySettingsApiKeyHelperText,
+                      localizations.screensSettingsApiKeySettingsApiKeyHelperText,
                   prefixIcon: const Icon(Icons.key),
                   suffixIcon: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -660,8 +652,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                         ),
                         onPressed: _isLoading ? null : _pasteFromClipboard,
                         tooltip:
-                            localizations
-                                .screensSettingsApiKeySettingsPasteFromClipboard,
+                            localizations.screensSettingsApiKeySettingsPasteFromClipboard,
                       ),
                       IconButton(
                         icon: Icon(
@@ -865,18 +856,15 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                               ),
                               const SizedBox(width: 12),
                               Text(
-                                localizations
-                                    .screensSettingsApiKeySettingsTestingApiKey,
+                                localizations.screensSettingsApiKeySettingsTestingApiKey,
                                 style: const TextStyle(fontSize: 16),
                               ),
                             ],
                           )
                           : Text(
                             _hasApiKey
-                                ? (localizations
-                                    .screensSettingsApiKeySettingsUpdateApiKey)
-                                : (localizations
-                                    .screensSettingsApiKeySettingsTestAndSaveApiKey),
+                                ? (localizations.screensSettingsApiKeySettingsUpdateApiKey)
+                                : (localizations.screensSettingsApiKeySettingsTestAndSaveApiKey),
                             style: const TextStyle(fontSize: 16),
                           ),
                 ),
@@ -902,8 +890,7 @@ class _ApiKeySettingsScreenState extends State<ApiKeySettingsScreen> {
                         const Icon(Icons.open_in_new),
                         const SizedBox(width: 8),
                         Text(
-                          localizations
-                              .screensSettingsApiKeySettingsGetApiKeyFromOpenAi,
+                          localizations.screensSettingsApiKeySettingsGetApiKeyFromOpenAi,
                         ),
                       ],
                     ),

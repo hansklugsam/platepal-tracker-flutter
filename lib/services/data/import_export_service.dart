@@ -6,7 +6,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../storage/dish_service.dart';
 import '../storage/meal_log_service.dart';
 import '../storage/database_service.dart';
+import '../storage/user_profile_service.dart';
 import '../../models/dish.dart';
+import '../../models/user_profile.dart';
 
 enum DataType {
   userProfiles,
@@ -25,6 +27,7 @@ enum DuplicateHandling { skip, overwrite, merge }
 class ImportExportService {
   final DishService _dishService = DishService();
   final MealLogService _mealLogService = MealLogService();
+  final UserProfileService _userProfileService = UserProfileService();
 
   Future<ImportExportResult> exportData({
     required List<DataType> dataTypes,
@@ -444,8 +447,12 @@ class ImportExportService {
     try {
       switch (type) {
         case DataType.userProfiles:
-          // TODO: Implement user profiles export when service is available
-          return <Map<String, dynamic>>[];
+          try {
+            final profiles = await _userProfileService.getAllUserProfiles();
+            return profiles.map((p) => p.toJson()).toList();
+          } catch (e) {
+            throw Exception('Failed to retrieve user profiles: $e');
+          }
         case DataType.mealLogs:
           try {
             // Get all meal logs from both tables
@@ -1217,8 +1224,7 @@ class ImportExportService {
           'Meal logs should be processed through _processMealLogs method',
         );
       case DataType.userProfiles:
-        // TODO: Implement user profiles saving when service is available
-        debugPrint('⚠️ User profiles saving not yet implemented');
+        await _userProfileService.saveUserProfile(UserProfile.fromJson(item));
         break;
       case DataType.ingredients:
         // TODO: Implement ingredients saving when service is available

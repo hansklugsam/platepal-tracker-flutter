@@ -479,7 +479,7 @@ class _ChatScreenState extends State<ChatScreen> {
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(),
-                child: Text(localizations.componentsChatBotProfileCustomizationDialogCancel),
+                child: Text(localizations.screensChatComponentsChatBotProfileCustomizationDialogCancel),
               ),
               TextButton(
                 onPressed: () {

@@ -154,14 +154,14 @@ class _CalendarScreenState extends State<CalendarScreen> {
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: Text(l10n.componentsChatBotProfileCustomizationDialogCancel),
+                child: Text(l10n.screensChatComponentsChatBotProfileCustomizationDialogCancel),
               ),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
                 style: TextButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.error,
                 ),
-                child: Text(l10n.componentsDishesDishCardDelete),
+                child: Text(l10n.screensMealsComponentsDishesDishCardDelete),
               ),
             ],
           ),
@@ -537,7 +537,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  log.dish?.name ?? l10n.componentsCalendarCalendarDayDetailUnknownDish,
+                  log.dish?.name ?? l10n.screensCalendarComponentsCalendarCalendarDayDetailUnknownDish,
                   style: theme.textTheme.bodyMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),

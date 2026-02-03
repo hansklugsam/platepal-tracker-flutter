@@ -76,18 +76,18 @@ class ChatHeader extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     switch (personalityType) {
       case 'nutritionist':
-        return l10n.componentsChatBotPersonalityDescriptionNutritionist;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNutritionist;
       case 'casualGymbro':
-        return l10n.componentsChatBotPersonalityDescriptionCasualGymbro;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionCasualGymbro;
       case 'angryGreg':
-        return l10n.componentsChatBotPersonalityDescriptionAngryGreg;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionAngryGreg;
       case 'veryAngryBro':
-        return l10n.componentsChatBotPersonalityDescriptionVeryAngryBro;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionVeryAngryBro;
       case 'fitnessCoach':
-        return l10n.componentsChatBotPersonalityDescriptionFitnessCoach;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionFitnessCoach;
       case 'nice':
       default:
-        return l10n.componentsChatBotPersonalityDescriptionNice;
+        return l10n.componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNice;
     }
   }
 
@@ -139,7 +139,7 @@ class ChatHeader extends StatelessWidget {
                 tooltip:
                     AppLocalizations.of(
                       context,
-                    ).componentsChatEditBotProfileTooltip,
+                    ).componentsChatChatHeaderComponentsChatEditBotProfileTooltip,
                 constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
                 padding: EdgeInsets.zero,
               ),

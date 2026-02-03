@@ -52,13 +52,13 @@ class _DishLogModalState extends State<DishLogModal> {
     final localizations = AppLocalizations.of(context);
     switch (mealType) {
       case 'breakfast':
-        return localizations.componentsModalsDishLogModalBreakfast;
+        return localizations.screensMealsComponentsModalsDishLogModalBreakfast;
       case 'lunch':
-        return localizations.componentsModalsDishLogModalLunch;
+        return localizations.screensMealsComponentsModalsDishLogModalLunch;
       case 'dinner':
-        return localizations.componentsModalsDishLogModalDinner;
+        return localizations.screensMealsComponentsModalsDishLogModalDinner;
       case 'snack':
-        return localizations.componentsModalsDishLogModalSnack;
+        return localizations.screensMealsComponentsModalsDishLogModalSnack;
       default:
         return mealType;
     }
@@ -387,25 +387,25 @@ class _DishLogModalState extends State<DishLogModal> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               _buildNutritionItem(
-                                localizations.componentsCalendarMacroSummaryCalories,
+                                localizations.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories,
                                 calculatedCalories.round().toString(),
                                 'kcal',
                                 Colors.red,
                               ),
                               _buildNutritionItem(
-                                localizations.componentsCalendarMacroSummaryProtein,
+                                localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                                 calculatedProtein.toStringAsFixed(1),
                                 'g',
                                 Colors.blue,
                               ),
                               _buildNutritionItem(
-                                localizations.componentsCalendarMacroSummaryCarbs,
+                                localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                                 calculatedCarbs.toStringAsFixed(1),
                                 'g',
                                 Colors.orange,
                               ),
                               _buildNutritionItem(
-                                localizations.componentsCalendarMacroSummaryFat,
+                                localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                                 calculatedFat.toStringAsFixed(1),
                                 'g',
                                 Colors.purple,
@@ -458,7 +458,7 @@ class _DishLogModalState extends State<DishLogModal> {
                             _isLoading
                                 ? null
                                 : () => Navigator.of(context).pop(),
-                        child: Text(localizations.componentsChatBotProfileCustomizationDialogCancel),
+                        child: Text(localizations.screensChatComponentsChatBotProfileCustomizationDialogCancel),
                       ),
                     ),
                     const SizedBox(width: 16),
@@ -477,7 +477,7 @@ class _DishLogModalState extends State<DishLogModal> {
                                     ),
                                   ),
                                 )
-                                : Text(localizations.componentsChatBotProfileCustomizationDialogSave),
+                                : Text(localizations.screensDishCreateComponentsChatBotProfileCustomizationDialogSave),
                       ),
                     ),
                   ],

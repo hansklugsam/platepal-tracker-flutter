@@ -441,7 +441,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
               IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: _isSaving ? null : _saveChanges,
-                tooltip: l10n.componentsChatBotProfileCustomizationDialogSave,
+                tooltip: l10n.screensDishCreateComponentsChatBotProfileCustomizationDialogSave,
               ),
           ],
         ),
@@ -471,7 +471,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
                               _isSaving
                                   ? null
                                   : () => Navigator.of(context).pop(),
-                          child: Text(l10n.screensSettingsMacroCustomizationDiscardChanges),
+                          child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges),
                         ),
                       ),
                       const SizedBox(width: 16),
@@ -487,7 +487,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
                                       strokeWidth: 2,
                                     ),
                                   )
-                                  : Text(l10n.screensSettingsMacroCustomizationSaveChanges),
+                                  : Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges),
                         ),
                       ),
                     ],
@@ -602,7 +602,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
           children: [
             // Protein slider
             _buildMacroSlider(
-              label: l10n.componentsCalendarMacroSummaryProtein,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
               value: _proteinRatio,
               color: const Color(0xFF4ade80), // Green
               onChanged: (value) => _adjustRatios('protein', value),
@@ -617,7 +617,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
 
             // Carbs slider
             _buildMacroSlider(
-              label: l10n.componentsCalendarMacroSummaryCarbs,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
               value: _carbsRatio,
               color: const Color(0xFF3b82f6), // Blue
               onChanged: (value) => _adjustRatios('carbs', value),
@@ -632,7 +632,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
 
             // Fat slider
             _buildMacroSlider(
-              label: l10n.componentsCalendarMacroSummaryFat,
+              label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
               value: _fatRatio,
               color: const Color(0xFFf59e0b), // Amber
               onChanged: (value) => _adjustRatios('fat', value),
@@ -801,7 +801,7 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  l10n.componentsCalendarMacroSummaryFiber,
+                  l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber,
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w600,
                   ),
@@ -1030,16 +1030,16 @@ class _MacroCustomizationScreenState extends State<MacroCustomizationScreen> {
       context: context,
       builder:
           (context) => AlertDialog(
-            title: Text(l10n.screensSettingsMacroCustomizationUnsavedChanges),
-            content: Text(l10n.screensSettingsMacroCustomizationUnsavedChangesMessage),
+            title: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChanges),
+            content: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChangesMessage),
             actions: [
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: Text(l10n.screensSettingsMacroCustomizationDiscardChanges),
+                child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges),
               ),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
-                child: Text(l10n.screensSettingsMacroCustomizationSaveChanges),
+                child: Text(l10n.screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges),
               ),
             ],
           ),

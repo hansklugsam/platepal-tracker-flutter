@@ -39,7 +39,7 @@ class NutritionAnalysisCard extends StatelessWidget {
             const SizedBox(height: 16),
 
             // Dish Name
-            _buildInfoRow(context, localizations.componentsChatNutritionAnalysisCardDishName, analysis.dishName),
+            _buildInfoRow(context, localizations.screensDishCreateComponentsChatNutritionAnalysisCardDishName, analysis.dishName),
 
             // Serving Size
             if (analysis.servingSize != null) ...[
@@ -79,13 +79,13 @@ class NutritionAnalysisCard extends StatelessWidget {
                     children: [
                       _buildNutritionItem(
                         context,
-                        localizations.componentsCalendarMacroSummaryCalories,
+                        localizations.componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories,
                         '${analysis.nutritionInfo.calories.toInt()}',
                         'kcal',
                       ),
                       _buildNutritionItem(
                         context,
-                        localizations.componentsCalendarMacroSummaryProtein,
+                        localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                         '${analysis.nutritionInfo.protein.toInt()}',
                         'g',
                       ),
@@ -97,13 +97,13 @@ class NutritionAnalysisCard extends StatelessWidget {
                     children: [
                       _buildNutritionItem(
                         context,
-                        localizations.componentsCalendarMacroSummaryCarbs,
+                        localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                         '${analysis.nutritionInfo.carbs.toInt()}',
                         'g',
                       ),
                       _buildNutritionItem(
                         context,
-                        localizations.componentsCalendarMacroSummaryFat,
+                        localizations.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                         '${analysis.nutritionInfo.fat.toInt()}',
                         'g',
                       ),
@@ -118,7 +118,7 @@ class NutritionAnalysisCard extends StatelessWidget {
             // Ingredients
             if (analysis.ingredients.isNotEmpty) ...[
               Text(
-                localizations.componentsChatMessageBubbleIngredients,
+                localizations.screensDishCreateComponentsChatMessageBubbleIngredients,
                 style: theme.textTheme.titleSmall?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),

@@ -103,7 +103,7 @@ class _ChatAgentSettingsScreenState extends State<ChatAgentSettingsScreen> {
                       child: CircularProgressIndicator(strokeWidth: 2),
                     )
                     : Icon(Icons.save),
-            label: Text(localizations.componentsChatBotProfileCustomizationDialogSave),
+            label: Text(localizations.screensDishCreateComponentsChatBotProfileCustomizationDialogSave),
           ),
           const SizedBox(height: 32),
           Card(

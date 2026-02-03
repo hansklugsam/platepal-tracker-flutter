@@ -27,7 +27,7 @@ class DaySelector extends StatelessWidget {
     final result = <WeekDay>[];
     final today = DateTime.now();
 
-    final locale = AppLocalizations.of(context).localeName;
+    final locale = AppLocalizations.of(context).componentsCalendarDaySelectorLocaleName;
 
     for (int i = 0; i < 7; i++) {
       final date = weekStartDate.add(Duration(days: i));
@@ -60,7 +60,7 @@ class DaySelector extends StatelessWidget {
 
   String _getWeekRangeText(BuildContext context) {
     final weekEndDate = weekStartDate.add(const Duration(days: 6));
-    final locale = AppLocalizations.of(context).localeName;
+    final locale = AppLocalizations.of(context).componentsCalendarDaySelectorLocaleName;
 
     final startMonth = DateFormat.MMM(locale).format(weekStartDate);
     final endMonth = DateFormat.MMM(locale).format(weekEndDate);

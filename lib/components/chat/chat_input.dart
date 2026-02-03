@@ -132,7 +132,7 @@ class _ChatInputState extends State<ChatInput>
                         children: [
                           _buildMenuOption(
                             icon: Icons.camera_alt,
-                            label: localizations.componentsChatBotProfileCustomizationDialogTakePhoto,
+                            label: localizations.componentsChatChatInputComponentsChatBotProfileCustomizationDialogTakePhoto,
                             onTap: () {
                               _toggleMenu();
                               _pickImage(ImageSource.camera);
@@ -141,7 +141,7 @@ class _ChatInputState extends State<ChatInput>
                           ),
                           _buildMenuOption(
                             icon: Icons.photo_library,
-                            label: localizations.componentsChatBotProfileCustomizationDialogChooseFromGallery,
+                            label: localizations.componentsChatChatInputComponentsChatBotProfileCustomizationDialogChooseFromGallery,
                             onTap: () {
                               _toggleMenu();
                               _pickImage(ImageSource.gallery);
@@ -150,7 +150,7 @@ class _ChatInputState extends State<ChatInput>
                           ),
                           _buildMenuOption(
                             icon: Icons.barcode_reader,
-                            label: localizations.componentsChatChatInputScanBarcode,
+                            label: localizations.screensDishCreateComponentsChatChatInputScanBarcode,
                             onTap: () {
                               _toggleMenu();
                               _openBarcodeScanner();
@@ -159,7 +159,7 @@ class _ChatInputState extends State<ChatInput>
                           ),
                           _buildMenuOption(
                             icon: Icons.search,
-                            label: localizations.componentsChatChatInputSearchProduct,
+                            label: localizations.screensDishCreateComponentsChatChatInputSearchProduct,
                             onTap: () {
                               _toggleMenu();
                               _openProductSearch();
@@ -567,7 +567,7 @@ class _ChatInputState extends State<ChatInput>
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              AppLocalizations.of(context).componentsChatChatInputErrorPickingImage(e.toString()),
+              AppLocalizations.of(context).screensDishCreateComponentsChatChatInputErrorPickingImage(e.toString()),
             ),
             backgroundColor: Theme.of(context).colorScheme.error,
             behavior: SnackBarBehavior.floating,

@@ -76,7 +76,7 @@ class _CalendarDayDetailState extends State<CalendarDayDetail> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            log.dish?.name ?? l10n.componentsCalendarCalendarDayDetailUnknownDish,
+            log.dish?.name ?? l10n.screensCalendarComponentsCalendarCalendarDayDetailUnknownDish,
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.w600,
             ),

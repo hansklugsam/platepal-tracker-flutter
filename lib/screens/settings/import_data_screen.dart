@@ -317,7 +317,7 @@ class _ImportDataScreenState extends State<ImportDataScreen> {
         subtitle = 'User profile and preferences';
         break;
       case DataType.ingredients:
-        title = AppLocalizations.of(context).componentsChatMessageBubbleIngredients;
+        title = AppLocalizations.of(context).screensDishCreateComponentsChatMessageBubbleIngredients;
         subtitle = 'Ingredient database';
         break;
       case DataType.allData:

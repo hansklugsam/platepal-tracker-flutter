@@ -69,7 +69,7 @@ class DishCard extends StatelessWidget {
                             children: [
                               const Icon(Icons.edit),
                               const SizedBox(width: 8),
-                              Text(l10n.componentsDishesDishCardEdit),
+                              Text(l10n.screensMealsComponentsDishesDishCardEdit),
                             ],
                           ),
                         ),
@@ -80,7 +80,7 @@ class DishCard extends StatelessWidget {
                             children: [
                               const Icon(Icons.delete),
                               const SizedBox(width: 8),
-                              Text(l10n.componentsDishesDishCardDelete),
+                              Text(l10n.screensMealsComponentsDishesDishCardDelete),
                             ],
                           ),
                         ),
@@ -93,19 +93,19 @@ class DishCard extends StatelessWidget {
           Row(
             children: [
               _NutrientChip(
-                label: l10n.componentsCalendarMacroSummaryProtein,
+                label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein,
                 value: '${dish.nutrition.protein.toStringAsFixed(1)}g',
                 color: Colors.blue,
               ),
               const SizedBox(width: 8),
               _NutrientChip(
-                label: l10n.componentsCalendarMacroSummaryCarbs,
+                label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs,
                 value: '${dish.nutrition.carbs.toStringAsFixed(1)}g',
                 color: Colors.orange,
               ),
               const SizedBox(width: 8),
               _NutrientChip(
-                label: l10n.componentsCalendarMacroSummaryFat,
+                label: l10n.screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat,
                 value: '${dish.nutrition.fat.toStringAsFixed(1)}g',
                 color: Colors.green,
               ),

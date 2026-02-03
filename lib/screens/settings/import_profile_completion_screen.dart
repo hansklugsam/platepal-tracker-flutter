@@ -137,7 +137,7 @@ class _ImportProfileCompletionScreenState
                       ),
                       validator: (value) {
                         if (value == null || value.trim().isEmpty) {
-                          return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+                          return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
                         }
                         return null;
                       },
@@ -154,7 +154,7 @@ class _ImportProfileCompletionScreenState
                       keyboardType: TextInputType.emailAddress,
                       validator: (value) {
                         if (value == null || value.trim().isEmpty) {
-                          return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+                          return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
                         }
                         if (!value.contains('@')) {
                           return l10n.screensSettingsImportProfileCompletionInvalidEmail;
@@ -178,7 +178,7 @@ class _ImportProfileCompletionScreenState
                             keyboardType: TextInputType.number,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {
-                                return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+                                return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
                               }
                               final age = int.tryParse(value);
                               if (age == null || age < 13 || age > 120) {
@@ -228,7 +228,7 @@ class _ImportProfileCompletionScreenState
                           child: TextFormField(
                             controller: _heightController,
                             decoration: InputDecoration(
-                              labelText: l10n.screensSettingsImportProfileCompletionHeight,
+                              labelText: l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight,
                               border: const OutlineInputBorder(),
                               prefixIcon: const Icon(Icons.height),
                               suffixText:
@@ -239,7 +239,7 @@ class _ImportProfileCompletionScreenState
                             keyboardType: TextInputType.number,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {
-                                return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+                                return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
                               }
                               final height = double.tryParse(value);
                               if (height == null) {
@@ -263,7 +263,7 @@ class _ImportProfileCompletionScreenState
                           child: TextFormField(
                             controller: _weightController,
                             decoration: InputDecoration(
-                              labelText: l10n.screensSettingsImportProfileCompletionWeight,
+                              labelText: l10n.screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight,
                               border: const OutlineInputBorder(),
                               prefixIcon: const Icon(Icons.monitor_weight),
                               suffixText:
@@ -274,7 +274,7 @@ class _ImportProfileCompletionScreenState
                             keyboardType: TextInputType.number,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {
-                                return l10n.componentsChatBotProfileCustomizationDialogRequiredField;
+                                return l10n.screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
                               }
                               final weight = double.tryParse(value);
                               if (weight == null) {
@@ -435,7 +435,7 @@ class _ImportProfileCompletionScreenState
                 flex: 2,
                 child: FilledButton(
                   onPressed: _saveProfile,
-                  child: Text(l10n.componentsChatBotProfileCustomizationDialogSave),
+                  child: Text(l10n.screensDishCreateComponentsChatBotProfileCustomizationDialogSave),
                 ),
               ),
             ],

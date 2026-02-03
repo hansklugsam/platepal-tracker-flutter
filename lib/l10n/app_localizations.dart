@@ -63,7 +63,8 @@ import 'app_localizations_es.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,7 +72,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -83,18 +85,19 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('de'),
     Locale('en'),
-    Locale('es')
+    Locale('es'),
   ];
 
   /// Message shown when no meals are logged for selected day
@@ -103,23 +106,11 @@ abstract class AppLocalizations {
   /// **'No meals logged for this day'**
   String get componentsCalendarCalendarDayDetailNoMealsLoggedForDay;
 
-  /// Label for dish when name is not available
+  /// Common OK button label
   ///
   /// In en, this message translates to:
-  /// **'Unknown Dish'**
-  String get componentsCalendarCalendarDayDetailUnknownDish;
-
-  /// Calories label
-  ///
-  /// In en, this message translates to:
-  /// **'Calories'**
-  String get componentsCalendarMacroSummaryCalories;
-
-  /// Carbs label
-  ///
-  /// In en, this message translates to:
-  /// **'Carbs'**
-  String get componentsCalendarMacroSummaryCarbs;
+  /// **'OK'**
+  String get componentsCalendarMacroSummaryComponentsCommonOk;
 
   /// Title for estimated calories info dialog
   ///
@@ -144,18 +135,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This is your estimated calorie expenditure for today based on your activity level. Since the day isn\'t complete yet, this represents your base metabolic rate plus estimated activity. Your actual calories burned may be higher if you do more activities today.'**
   String get componentsCalendarMacroSummaryEstimatedCaloriesTodayMessage;
-
-  /// Fat label
-  ///
-  /// In en, this message translates to:
-  /// **'Fat'**
-  String get componentsCalendarMacroSummaryFat;
-
-  /// Fiber nutrition label
-  ///
-  /// In en, this message translates to:
-  /// **'Fiber'**
-  String get componentsCalendarMacroSummaryFiber;
 
   /// Button text to get AI nutrition tip
   ///
@@ -193,47 +172,47 @@ abstract class AppLocalizations {
   /// **'Nutrition Summary'**
   String get componentsCalendarMacroSummaryNutritionSummary;
 
-  /// Protein label
-  ///
-  /// In en, this message translates to:
-  /// **'Protein'**
-  String get componentsCalendarMacroSummaryProtein;
-
-  /// Short label for calories used in compact macro view
-  ///
-  /// In en, this message translates to:
-  /// **'Cal'**
-  String get componentsCalendarMacroSummaryCompactCalories;
-
-  /// Short label for protein used in compact macro view
-  ///
-  /// In en, this message translates to:
-  /// **'Protein'**
-  String get componentsCalendarMacroSummaryCompactProtein;
-
-  /// Short label for carbs used in compact macro view
-  ///
-  /// In en, this message translates to:
-  /// **'Carbs'**
-  String get componentsCalendarMacroSummaryCompactCarbs;
-
-  /// Short label for fat used in compact macro view
-  ///
-  /// In en, this message translates to:
-  /// **'Fat'**
-  String get componentsCalendarMacroSummaryCompactFat;
-
-  /// Common OK button label
-  ///
-  /// In en, this message translates to:
-  /// **'OK'**
-  String get componentsCommonOk;
-
   /// Title for agent steps modal
   ///
   /// In en, this message translates to:
   /// **'Agent Processing Steps'**
   String get componentsChatAgentStepsModalAgentProcessingSteps;
+
+  /// Label for AI validations badge
+  ///
+  /// In en, this message translates to:
+  /// **'AI validations'**
+  String get componentsChatAgentStepsModalBadgeAiValidations;
+
+  /// Label for automatic fixes badge
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic fixes'**
+  String get componentsChatAgentStepsModalBadgeAutomaticFixes;
+
+  /// Label for emergency override badge
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency overrides'**
+  String get componentsChatAgentStepsModalBadgeEmergencyOverrides;
+
+  /// Label for bot type
+  ///
+  /// In en, this message translates to:
+  /// **'Bot Type'**
+  String get componentsChatAgentStepsModalBotType;
+
+  /// Label for completed steps
+  ///
+  /// In en, this message translates to:
+  /// **'Completed Steps'**
+  String get componentsChatAgentStepsModalCompletedSteps;
+
+  /// Common tooltip for copy to clipboard
+  ///
+  /// In en, this message translates to:
+  /// **'Copy to clipboard'**
+  String get componentsChatAgentStepsModalComponentsCommonCopyToClipboard;
 
   /// Snack bar text after copying
   ///
@@ -247,95 +226,17 @@ abstract class AppLocalizations {
   /// **'Copy All'**
   String get componentsChatAgentStepsModalCopyAll;
 
-  /// Button text to view full data
-  ///
-  /// In en, this message translates to:
-  /// **'View Full Data'**
-  String get componentsChatAgentStepsModalViewFullData;
-
-  /// Button text to view full prompt
-  ///
-  /// In en, this message translates to:
-  /// **'View Full Prompt'**
-  String get componentsChatAgentStepsModalViewFullPrompt;
-
-  /// Title for thinking process section
-  ///
-  /// In en, this message translates to:
-  /// **'🧠 Thinking Process'**
-  String get componentsChatAgentStepsModalThinkingProcessTitle;
-
-  /// Subtitle for thinking process section
-  ///
-  /// In en, this message translates to:
-  /// **'Real-time agent thinking steps'**
-  String get componentsChatAgentStepsModalThinkingProcessSubtitle;
-
-  /// Title for processing steps section
-  ///
-  /// In en, this message translates to:
-  /// **'⚙️ Processing Steps'**
-  String get componentsChatAgentStepsModalProcessingStepsTitle;
-
-  /// Subtitle for processing steps section
-  ///
-  /// In en, this message translates to:
-  /// **'Detailed step-by-step execution'**
-  String get componentsChatAgentStepsModalProcessingStepsSubtitle;
-
-  /// Title for processing summary card
-  ///
-  /// In en, this message translates to:
-  /// **'Processing Summary'**
-  String get componentsChatAgentStepsModalProcessingSummary;
-
   /// Tooltip for copying summary
   ///
   /// In en, this message translates to:
   /// **'Copy summary data'**
   String get componentsChatAgentStepsModalCopySummaryTooltip;
 
-  /// Label for processing time
+  /// Header for data output section
   ///
   /// In en, this message translates to:
-  /// **'Processing Time'**
-  String get componentsChatAgentStepsModalProcessingTime;
-
-  /// Label for bot type
-  ///
-  /// In en, this message translates to:
-  /// **'Bot Type'**
-  String get componentsChatAgentStepsModalBotType;
-
-  /// Label for total steps
-  ///
-  /// In en, this message translates to:
-  /// **'Total Steps'**
-  String get componentsChatAgentStepsModalTotalSteps;
-
-  /// Label for skipped steps
-  ///
-  /// In en, this message translates to:
-  /// **'Skipped Steps'**
-  String get componentsChatAgentStepsModalSkippedSteps;
-
-  /// Label for failed steps
-  ///
-  /// In en, this message translates to:
-  /// **'Failed Steps'**
-  String get componentsChatAgentStepsModalFailedSteps;
-
-  /// Label for error recovery stats
-  ///
-  /// In en, this message translates to:
-  /// **'Error Recovery'**
-  String get componentsChatAgentStepsModalErrorRecovery;
-
-  /// Label for completed steps
-  ///
-  /// In en, this message translates to:
-  /// **'Completed Steps'**
-  String get componentsChatAgentStepsModalCompletedSteps;
+  /// **'📤 Data Output'**
+  String get componentsChatAgentStepsModalDataOutput;
 
   /// Label for deep search setting
   ///
@@ -343,17 +244,47 @@ abstract class AppLocalizations {
   /// **'Deep Search'**
   String get componentsChatAgentStepsModalDeepSearch;
 
+  /// Disabled label
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get componentsChatAgentStepsModalDisabled;
+
   /// Enabled label
   ///
   /// In en, this message translates to:
   /// **'Enabled'**
   String get componentsChatAgentStepsModalEnabled;
 
-  /// Disabled label
+  /// Header for error details section
   ///
   /// In en, this message translates to:
-  /// **'Disabled'**
-  String get componentsChatAgentStepsModalDisabled;
+  /// **'❌ Error Details'**
+  String get componentsChatAgentStepsModalErrorDetails;
+
+  /// Label for error recovery stats
+  ///
+  /// In en, this message translates to:
+  /// **'Error Recovery'**
+  String get componentsChatAgentStepsModalErrorRecovery;
+
+  /// Label for failed steps
+  ///
+  /// In en, this message translates to:
+  /// **'Failed Steps'**
+  String get componentsChatAgentStepsModalFailedSteps;
+
+  /// Length label with placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'Length: {count} characters'**
+  String componentsChatAgentStepsModalLengthLabel(int count);
+
+  /// Header for metadata section
+  ///
+  /// In en, this message translates to:
+  /// **'📊 Metadata'**
+  String get componentsChatAgentStepsModalMetadata;
 
   /// Label for modifications section
   ///
@@ -373,257 +304,41 @@ abstract class AppLocalizations {
   /// **'Perfect processing! No corrections or modifications were needed.'**
   String get componentsChatAgentStepsModalPerfectProcessing;
 
-  /// Title for pipeline modifications section
-  ///
-  /// In en, this message translates to:
-  /// **'✨ Pipeline Modifications'**
-  String get componentsChatAgentStepsModalPipelineModificationsTitle;
-
   /// Subtitle for pipeline modifications when none
   ///
   /// In en, this message translates to:
   /// **'No modifications were needed - your request was processed smoothly!'**
   String get componentsChatAgentStepsModalPipelineModificationsSubtitle;
 
-  /// Title for step-level modifications
+  /// Title for pipeline modifications section
   ///
   /// In en, this message translates to:
-  /// **'🔧 Step Modifications'**
-  String get componentsChatAgentStepsModalStepModifications;
+  /// **'✨ Pipeline Modifications'**
+  String get componentsChatAgentStepsModalPipelineModificationsTitle;
 
-  /// Tooltip to copy modifications
+  /// Subtitle for processing steps section
   ///
   /// In en, this message translates to:
-  /// **'Copy modifications'**
-  String get componentsChatAgentStepsModalCopyModifications;
+  /// **'Detailed step-by-step execution'**
+  String get componentsChatAgentStepsModalProcessingStepsSubtitle;
 
-  /// Summary label with placeholder
+  /// Title for processing steps section
   ///
   /// In en, this message translates to:
-  /// **'Summary: {summary}'**
-  String componentsChatAgentStepsModalSummaryLabel(String summary);
+  /// **'⚙️ Processing Steps'**
+  String get componentsChatAgentStepsModalProcessingStepsTitle;
 
-  /// Title for enhanced system prompt
+  /// Title for processing summary card
   ///
   /// In en, this message translates to:
-  /// **'🤖 Enhanced System Prompt'**
-  String get componentsChatAgentStepsModalEnhancedSystemPrompt;
+  /// **'Processing Summary'**
+  String get componentsChatAgentStepsModalProcessingSummary;
 
-  /// Tooltip to copy enhanced system prompt
+  /// Label for processing time
   ///
   /// In en, this message translates to:
-  /// **'Copy enhanced system prompt'**
-  String get componentsChatAgentStepsModalCopyEnhancedPrompt;
-
-  /// Title for high protein dish
-  ///
-  /// In en, this message translates to:
-  /// **'High protein dish'**
-  String get componentsChatDishSuggestionCardHighProtein;
-
-  /// Title for high carb dish
-  ///
-  /// In en, this message translates to:
-  /// **'High carb dish'**
-  String get componentsChatDishSuggestionCardHighCarb;
-
-  /// Title for high fat dish
-  ///
-  /// In en, this message translates to:
-  /// **'High fat dish'**
-  String get componentsChatDishSuggestionCardHighFat;
-
-  /// Title for balanced dish
-  ///
-  /// In en, this message translates to:
-  /// **'Balanced dish'**
-  String get componentsChatDishSuggestionCardBalanced;
-
-  /// Title for unbalanced dish
-  ///
-  /// In en, this message translates to:
-  /// **'Unbalanced dish'**
-  String get componentsChatDishSuggestionCardUnbalanced;
-
-  /// Protein label for nutrition bar
-  ///
-  /// In en, this message translates to:
-  /// **'Protein'**
-  String get componentsChatDishSuggestionCardProtein;
-
-  /// Carbs label for nutrition bar
-  ///
-  /// In en, this message translates to:
-  /// **'Carbs'**
-  String get componentsChatDishSuggestionCardCarbs;
-
-  /// Fat label for nutrition bar
-  ///
-  /// In en, this message translates to:
-  /// **'Fat'**
-  String get componentsChatDishSuggestionCardFat;
-
-  /// Calories label for nutrition bar
-  ///
-  /// In en, this message translates to:
-  /// **'Calories'**
-  String get componentsChatDishSuggestionCardCalories;
-
-  /// Button text for dish details
-  ///
-  /// In en, this message translates to:
-  /// **'Details'**
-  String get componentsChatDishSuggestionCardInspect;
-
-  /// Label for the user in the message bubble
-  ///
-  /// In en, this message translates to:
-  /// **'You'**
-  String get componentsChatMessageBubbleYou;
-
-  /// Label for the assistant in the message bubble
-  ///
-  /// In en, this message translates to:
-  /// **'PlatePal Assistant'**
-  String get componentsChatMessageBubbleAssistant;
-
-  /// Tag to identify the bot in the message bubble
-  ///
-  /// In en, this message translates to:
-  /// **'(bot)'**
-  String get componentsChatMessageBubbleBotTag;
-
-  /// Text shown while a message is being sent
-  ///
-  /// In en, this message translates to:
-  /// **'Sending...'**
-  String get componentsChatMessageBubbleSending;
-
-  /// Title for the suggested dishes section
-  ///
-  /// In en, this message translates to:
-  /// **'Suggested Dishes'**
-  String get componentsChatMessageBubbleSuggestedDishes;
-
-  /// Label for a recommendation in the message bubble
-  ///
-  /// In en, this message translates to:
-  /// **'Recommendation'**
-  String get componentsChatMessageBubbleRecommendation;
-
-  /// Text shown when no recommendations are available
-  ///
-  /// In en, this message translates to:
-  /// **'No recommendations available.'**
-  String get componentsChatMessageBubbleNoRecommendationsAvailable;
-
-  /// Length label with placeholder
-  ///
-  /// In en, this message translates to:
-  /// **'Length: {count} characters'**
-  String componentsChatAgentStepsModalLengthLabel(int count);
-
-  /// Header for technical details in modification item
-  ///
-  /// In en, this message translates to:
-  /// **'Technical Details'**
-  String get componentsChatAgentStepsModalTechnicalDetails;
-
-  /// Header for before/after data changes
-  ///
-  /// In en, this message translates to:
-  /// **'Data Changes'**
-  String get componentsChatAgentStepsModalDataChanges;
-
-  /// Label for before data column
-  ///
-  /// In en, this message translates to:
-  /// **'Before'**
-  String get componentsChatAgentStepsModalBefore;
-
-  /// Label for after data column
-  ///
-  /// In en, this message translates to:
-  /// **'After'**
-  String get componentsChatAgentStepsModalAfter;
-
-  /// Status label for skipped steps
-  ///
-  /// In en, this message translates to:
-  /// **'Skipped'**
-  String get componentsChatAgentStepsModalStatusSkipped;
-
-  /// Status label when an error was recovered
-  ///
-  /// In en, this message translates to:
-  /// **'Error recovered'**
-  String get componentsChatAgentStepsModalStatusErrorRecovered;
-
-  /// Status label when error handling failed
-  ///
-  /// In en, this message translates to:
-  /// **'Error handling failed'**
-  String get componentsChatAgentStepsModalStatusErrorHandlingFailed;
-
-  /// Status label for successful completion
-  ///
-  /// In en, this message translates to:
-  /// **'Completed successfully'**
-  String get componentsChatAgentStepsModalStatusCompletedSuccessfully;
-
-  /// Generic failed label
-  ///
-  /// In en, this message translates to:
-  /// **'Failed'**
-  String get componentsChatAgentStepsModalFailed;
-
-  /// Label for emergency override badge
-  ///
-  /// In en, this message translates to:
-  /// **'Emergency overrides'**
-  String get componentsChatAgentStepsModalBadgeEmergencyOverrides;
-
-  /// Label for AI validations badge
-  ///
-  /// In en, this message translates to:
-  /// **'AI validations'**
-  String get componentsChatAgentStepsModalBadgeAiValidations;
-
-  /// Label for automatic fixes badge
-  ///
-  /// In en, this message translates to:
-  /// **'Automatic fixes'**
-  String get componentsChatAgentStepsModalBadgeAutomaticFixes;
-
-  /// Total modifications text with placeholder
-  ///
-  /// In en, this message translates to:
-  /// **'Total modifications: {count}'**
-  String componentsChatAgentStepsModalTotalModifications(int count);
-
-  /// Header for skip details section
-  ///
-  /// In en, this message translates to:
-  /// **'⏭️ Skip Details'**
-  String get componentsChatAgentStepsModalSkipDetails;
-
-  /// Header for metadata section
-  ///
-  /// In en, this message translates to:
-  /// **'📊 Metadata'**
-  String get componentsChatAgentStepsModalMetadata;
-
-  /// Header for data output section
-  ///
-  /// In en, this message translates to:
-  /// **'📤 Data Output'**
-  String get componentsChatAgentStepsModalDataOutput;
-
-  /// Header for error details section
-  ///
-  /// In en, this message translates to:
-  /// **'❌ Error Details'**
-  String get componentsChatAgentStepsModalErrorDetails;
+  /// **'Processing Time'**
+  String get componentsChatAgentStepsModalProcessingTime;
 
   /// Header for raw step data section
   ///
@@ -631,23 +346,59 @@ abstract class AppLocalizations {
   /// **'🔍 Raw Step Data'**
   String get componentsChatAgentStepsModalRawStepData;
 
-  /// ID label with placeholder
+  /// Header for skip details section
   ///
   /// In en, this message translates to:
-  /// **'ID: {id}'**
-  String componentsChatAgentStepsModalIdLabel(String id);
+  /// **'⏭️ Skip Details'**
+  String get componentsChatAgentStepsModalSkipDetails;
 
-  /// Time label with placeholder
+  /// Label for skipped steps
   ///
   /// In en, this message translates to:
-  /// **'Time: {time}'**
-  String componentsChatAgentStepsModalTimeLabel(String time);
+  /// **'Skipped Steps'**
+  String get componentsChatAgentStepsModalSkippedSteps;
 
-  /// Common tooltip for copy to clipboard
+  /// Summary label with placeholder
   ///
   /// In en, this message translates to:
-  /// **'Copy to clipboard'**
-  String get componentsCommonCopyToClipboard;
+  /// **'Summary: {summary}'**
+  String componentsChatAgentStepsModalSummaryLabel(String summary);
+
+  /// Subtitle for thinking process section
+  ///
+  /// In en, this message translates to:
+  /// **'Real-time agent thinking steps'**
+  String get componentsChatAgentStepsModalThinkingProcessSubtitle;
+
+  /// Title for thinking process section
+  ///
+  /// In en, this message translates to:
+  /// **'🧠 Thinking Process'**
+  String get componentsChatAgentStepsModalThinkingProcessTitle;
+
+  /// Total modifications text with placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'Total modifications: {count}'**
+  String componentsChatAgentStepsModalTotalModifications(int count);
+
+  /// Label for total steps
+  ///
+  /// In en, this message translates to:
+  /// **'Total Steps'**
+  String get componentsChatAgentStepsModalTotalSteps;
+
+  /// Button text to view full data
+  ///
+  /// In en, this message translates to:
+  /// **'View Full Data'**
+  String get componentsChatAgentStepsModalViewFullData;
+
+  /// Button text to view full prompt
+  ///
+  /// In en, this message translates to:
+  /// **'View Full Prompt'**
+  String get componentsChatAgentStepsModalViewFullPrompt;
 
   /// Angry Greg personality type
   ///
@@ -661,29 +412,11 @@ abstract class AppLocalizations {
   /// **'Bot Name'**
   String get componentsChatBotProfileCustomizationDialogBotName;
 
-  /// Cancel button text
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get componentsChatBotProfileCustomizationDialogCancel;
-
   /// Casual gym bro personality type
   ///
   /// In en, this message translates to:
   /// **'Casual Gym Bro'**
   String get componentsChatBotProfileCustomizationDialogCasualGymBro;
-
-  /// Change avatar button text
-  ///
-  /// In en, this message translates to:
-  /// **'Change Avatar'**
-  String get componentsChatBotProfileCustomizationDialogChangeAvatar;
-
-  /// Choose from gallery option
-  ///
-  /// In en, this message translates to:
-  /// **'Choose from Gallery'**
-  String get componentsChatBotProfileCustomizationDialogChooseFromGallery;
 
   /// Edit bot profile dialog title
   ///
@@ -713,43 +446,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Professional Nutritionist'**
-  String get componentsChatBotProfileCustomizationDialogProfessionalNutritionist;
-
-  /// Profile save success message
-  ///
-  /// In en, this message translates to:
-  /// **'Profile saved successfully'**
-  String get componentsChatBotProfileCustomizationDialogProfileSaved;
-
-  /// Profile save error message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to save profile'**
-  String get componentsChatBotProfileCustomizationDialogProfileSaveFailed;
-
-  /// Remove avatar button text
-  ///
-  /// In en, this message translates to:
-  /// **'Remove Avatar'**
-  String get componentsChatBotProfileCustomizationDialogRemoveAvatar;
-
-  /// Required field validation message
-  ///
-  /// In en, this message translates to:
-  /// **'This field is required'**
-  String get componentsChatBotProfileCustomizationDialogRequiredField;
-
-  /// Save button text
-  ///
-  /// In en, this message translates to:
-  /// **'Save'**
-  String get componentsChatBotProfileCustomizationDialogSave;
-
-  /// Take photo option
-  ///
-  /// In en, this message translates to:
-  /// **'Take Photo'**
-  String get componentsChatBotProfileCustomizationDialogTakePhoto;
+  String
+  get componentsChatBotProfileCustomizationDialogProfessionalNutritionist;
 
   /// Very angry bro personality type
   ///
@@ -757,71 +455,67 @@ abstract class AppLocalizations {
   /// **'Very Angry Bro'**
   String get componentsChatBotProfileCustomizationDialogVeryAngryBro;
 
-  /// Personality description for nutritionist bot
+  /// Personality description for angry Greg
   ///
   /// In en, this message translates to:
-  /// **'Professional & Evidence-based'**
-  String get componentsChatBotPersonalityDescriptionNutritionist;
+  /// **'Intense & Supplement-focused'**
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionAngryGreg;
 
   /// Personality description for casual gymbro
   ///
   /// In en, this message translates to:
   /// **'Casual & Motivational'**
-  String get componentsChatBotPersonalityDescriptionCasualGymbro;
-
-  /// Personality description for angry Greg
-  ///
-  /// In en, this message translates to:
-  /// **'Intense & Supplement-focused'**
-  String get componentsChatBotPersonalityDescriptionAngryGreg;
-
-  /// Personality description for very angry bro
-  ///
-  /// In en, this message translates to:
-  /// **'Extremely Intense'**
-  String get componentsChatBotPersonalityDescriptionVeryAngryBro;
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionCasualGymbro;
 
   /// Personality description for fitness coach
   ///
   /// In en, this message translates to:
   /// **'Encouraging & Supportive'**
-  String get componentsChatBotPersonalityDescriptionFitnessCoach;
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionFitnessCoach;
 
   /// Personality description for nice bot
   ///
   /// In en, this message translates to:
   /// **'Friendly & Helpful'**
-  String get componentsChatBotPersonalityDescriptionNice;
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNice;
+
+  /// Personality description for nutritionist bot
+  ///
+  /// In en, this message translates to:
+  /// **'Professional & Evidence-based'**
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionNutritionist;
+
+  /// Personality description for very angry bro
+  ///
+  /// In en, this message translates to:
+  /// **'Extremely Intense'**
+  String
+  get componentsChatChatHeaderComponentsChatBotPersonalityDescriptionVeryAngryBro;
 
   /// Tooltip for edit bot profile button
   ///
   /// In en, this message translates to:
   /// **'Edit Bot Profile'**
-  String get componentsChatEditBotProfileTooltip;
+  String get componentsChatChatHeaderComponentsChatEditBotProfileTooltip;
 
-  /// Error message when image picker fails
+  /// Choose from gallery option
   ///
   /// In en, this message translates to:
-  /// **'Error picking image: {error}'**
-  String componentsChatChatInputErrorPickingImage(Object error);
+  /// **'Choose from Gallery'**
+  String
+  get componentsChatChatInputComponentsChatBotProfileCustomizationDialogChooseFromGallery;
 
-  /// Message bubble hint for emergency modifications
+  /// Take photo option
   ///
   /// In en, this message translates to:
-  /// **'{count} emergency fixes applied'**
-  String componentsChatMessageBubbleModificationEmergency(int count);
-
-  /// Message bubble hint for AI modifications
-  ///
-  /// In en, this message translates to:
-  /// **'{count} AI enhancements applied'**
-  String componentsChatMessageBubbleModificationAi(int count);
-
-  /// Message bubble hint for automatic modifications
-  ///
-  /// In en, this message translates to:
-  /// **'{count} automatic improvements applied'**
-  String componentsChatMessageBubbleModificationAutomatic(int count);
+  /// **'Take Photo'**
+  String
+  get componentsChatChatInputComponentsChatBotProfileCustomizationDialogTakePhoto;
 
   /// Image attached confirmation
   ///
@@ -834,18 +528,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ingredients Added'**
   String get componentsChatChatInputIngredientsAdded;
-
-  /// Scan barcode button text
-  ///
-  /// In en, this message translates to:
-  /// **'Scan Barcode'**
-  String get componentsChatChatInputScanBarcode;
-
-  /// Search product button text
-  ///
-  /// In en, this message translates to:
-  /// **'Search Product'**
-  String get componentsChatChatInputSearchProduct;
 
   /// Send message button accessibility label
   ///
@@ -865,11 +547,35 @@ abstract class AppLocalizations {
   /// **'Analyze nutrition'**
   String get componentsChatChatWelcomeAnalyzeNutrition;
 
+  /// Message when tapping on nutrition analysis
+  ///
+  /// In en, this message translates to:
+  /// **'Help me analyze the nutritional values in my meal'**
+  String get componentsChatChatWelcomeAnalyzeNutritionMessage;
+
+  /// Subtitle for nutrition analysis
+  ///
+  /// In en, this message translates to:
+  /// **'Analyze the nutritional values of your meals'**
+  String get componentsChatChatWelcomeAnalyzeNutritionSubtitle;
+
   /// Calculate macros quick action
   ///
   /// In en, this message translates to:
   /// **'Calculate macros'**
   String get componentsChatChatWelcomeCalculateMacros;
+
+  /// Message when tapping on calculate macros
+  ///
+  /// In en, this message translates to:
+  /// **'Help me calculate the macros for my meals'**
+  String get componentsChatChatWelcomeCalculateMacrosMessage;
+
+  /// Subtitle for calculate macros
+  ///
+  /// In en, this message translates to:
+  /// **'Calculate macros for your meals'**
+  String get componentsChatChatWelcomeCalculateMacrosSubtitle;
 
   /// Chat welcome screen subtitle
   ///
@@ -889,6 +595,18 @@ abstract class AppLocalizations {
   /// **'Find alternatives'**
   String get componentsChatChatWelcomeFindAlternatives;
 
+  /// Message when tapping on find alternatives
+  ///
+  /// In en, this message translates to:
+  /// **'Find healthy alternatives to my current meal'**
+  String get componentsChatChatWelcomeFindAlternativesMessage;
+
+  /// Subtitle for find alternatives
+  ///
+  /// In en, this message translates to:
+  /// **'Discover healthy food alternatives'**
+  String get componentsChatChatWelcomeFindAlternativesSubtitle;
+
   /// Get started section title
   ///
   /// In en, this message translates to:
@@ -901,77 +619,11 @@ abstract class AppLocalizations {
   /// **'Ingredient info'**
   String get componentsChatChatWelcomeIngredientInfo;
 
-  /// Meal plan help quick action
+  /// Message when tapping on ingredient info
   ///
   /// In en, this message translates to:
-  /// **'Meal plan help'**
-  String get componentsChatChatWelcomeMealPlan;
-
-  /// Suggest meal quick action
-  ///
-  /// In en, this message translates to:
-  /// **'Suggest a meal'**
-  String get componentsChatChatWelcomeSuggestMeal;
-
-  /// Subtitle for suggest a meal
-  ///
-  /// In en, this message translates to:
-  /// **'Get personalized meal recommendations'**
-  String get componentsChatChatWelcomeSuggestMealSubtitle;
-
-  /// Message when tapping on suggest a meal
-  ///
-  /// In en, this message translates to:
-  /// **'Suggest a healthy meal based on my fitness goals'**
-  String get componentsChatChatWelcomeSuggestMealMessage;
-
-  /// Subtitle for nutrition analysis
-  ///
-  /// In en, this message translates to:
-  /// **'Analyze the nutritional values of your meals'**
-  String get componentsChatChatWelcomeAnalyzeNutritionSubtitle;
-
-  /// Message when tapping on nutrition analysis
-  ///
-  /// In en, this message translates to:
-  /// **'Help me analyze the nutritional values in my meal'**
-  String get componentsChatChatWelcomeAnalyzeNutritionMessage;
-
-  /// Subtitle for find alternatives
-  ///
-  /// In en, this message translates to:
-  /// **'Discover healthy food alternatives'**
-  String get componentsChatChatWelcomeFindAlternativesSubtitle;
-
-  /// Message when tapping on find alternatives
-  ///
-  /// In en, this message translates to:
-  /// **'Find healthy alternatives to my current meal'**
-  String get componentsChatChatWelcomeFindAlternativesMessage;
-
-  /// Subtitle for calculate macros
-  ///
-  /// In en, this message translates to:
-  /// **'Calculate macros for your meals'**
-  String get componentsChatChatWelcomeCalculateMacrosSubtitle;
-
-  /// Message when tapping on calculate macros
-  ///
-  /// In en, this message translates to:
-  /// **'Help me calculate the macros for my meals'**
-  String get componentsChatChatWelcomeCalculateMacrosMessage;
-
-  /// Subtitle for meal plan
-  ///
-  /// In en, this message translates to:
-  /// **'Create weekly meal plans'**
-  String get componentsChatChatWelcomeMealPlanSubtitle;
-
-  /// Message when tapping on meal plan
-  ///
-  /// In en, this message translates to:
-  /// **'Help me create a weekly meal plan'**
-  String get componentsChatChatWelcomeMealPlanMessage;
+  /// **'Tell me about the nutritional benefits of ingredients'**
+  String get componentsChatChatWelcomeIngredientInfoMessage;
 
   /// Subtitle for ingredient info
   ///
@@ -979,17 +631,53 @@ abstract class AppLocalizations {
   /// **'Learn more about ingredients and their benefits'**
   String get componentsChatChatWelcomeIngredientInfoSubtitle;
 
-  /// Message when tapping on ingredient info
+  /// Meal plan help quick action
   ///
   /// In en, this message translates to:
-  /// **'Tell me about the nutritional benefits of ingredients'**
-  String get componentsChatChatWelcomeIngredientInfoMessage;
+  /// **'Meal plan help'**
+  String get componentsChatChatWelcomeMealPlan;
+
+  /// Message when tapping on meal plan
+  ///
+  /// In en, this message translates to:
+  /// **'Help me create a weekly meal plan'**
+  String get componentsChatChatWelcomeMealPlanMessage;
+
+  /// Subtitle for meal plan
+  ///
+  /// In en, this message translates to:
+  /// **'Create weekly meal plans'**
+  String get componentsChatChatWelcomeMealPlanSubtitle;
+
+  /// Suggest meal quick action
+  ///
+  /// In en, this message translates to:
+  /// **'Suggest a meal'**
+  String get componentsChatChatWelcomeSuggestMeal;
+
+  /// Message when tapping on suggest a meal
+  ///
+  /// In en, this message translates to:
+  /// **'Suggest a healthy meal based on my fitness goals'**
+  String get componentsChatChatWelcomeSuggestMealMessage;
+
+  /// Subtitle for suggest a meal
+  ///
+  /// In en, this message translates to:
+  /// **'Get personalized meal recommendations'**
+  String get componentsChatChatWelcomeSuggestMealSubtitle;
 
   /// Help options question
   ///
   /// In en, this message translates to:
   /// **'What can I help you with?'**
   String get componentsChatChatWelcomeWhatCanIHelpWith;
+
+  /// Title for balanced dish
+  ///
+  /// In en, this message translates to:
+  /// **'Balanced dish'**
+  String get componentsChatDishSuggestionCardBalanced;
 
   /// Details button text
   ///
@@ -1003,11 +691,47 @@ abstract class AppLocalizations {
   /// **'Error opening dish screen: {error}'**
   String componentsChatDishSuggestionCardErrorOpeningDishScreen(Object error);
 
+  /// Title for high carb dish
+  ///
+  /// In en, this message translates to:
+  /// **'High carb dish'**
+  String get componentsChatDishSuggestionCardHighCarb;
+
+  /// Title for high fat dish
+  ///
+  /// In en, this message translates to:
+  /// **'High fat dish'**
+  String get componentsChatDishSuggestionCardHighFat;
+
+  /// Title for high protein dish
+  ///
+  /// In en, this message translates to:
+  /// **'High protein dish'**
+  String get componentsChatDishSuggestionCardHighProtein;
+
   /// Button text to log a dish
   ///
   /// In en, this message translates to:
   /// **'Log Dish'**
   String get componentsChatDishSuggestionCardLogDish;
+
+  /// Title for unbalanced dish
+  ///
+  /// In en, this message translates to:
+  /// **'Unbalanced dish'**
+  String get componentsChatDishSuggestionCardUnbalanced;
+
+  /// Label for the assistant in the message bubble
+  ///
+  /// In en, this message translates to:
+  /// **'PlatePal Assistant'**
+  String get componentsChatMessageBubbleAssistant;
+
+  /// Tag to identify the bot in the message bubble
+  ///
+  /// In en, this message translates to:
+  /// **'(bot)'**
+  String get componentsChatMessageBubbleBotTag;
 
   /// Close button text
   ///
@@ -1015,17 +739,41 @@ abstract class AppLocalizations {
   /// **'Close'**
   String get componentsChatMessageBubbleClose;
 
-  /// Ingredients data type
-  ///
-  /// In en, this message translates to:
-  /// **'Ingredients'**
-  String get componentsChatMessageBubbleIngredients;
-
   /// Message copied success message
   ///
   /// In en, this message translates to:
   /// **'Message copied to clipboard'**
   String get componentsChatMessageBubbleMessageCopied;
+
+  /// Message bubble hint for AI modifications
+  ///
+  /// In en, this message translates to:
+  /// **'{count} AI enhancements applied'**
+  String componentsChatMessageBubbleModificationAi(int count);
+
+  /// Message bubble hint for automatic modifications
+  ///
+  /// In en, this message translates to:
+  /// **'{count} automatic improvements applied'**
+  String componentsChatMessageBubbleModificationAutomatic(int count);
+
+  /// Message bubble hint for emergency modifications
+  ///
+  /// In en, this message translates to:
+  /// **'{count} emergency fixes applied'**
+  String componentsChatMessageBubbleModificationEmergency(int count);
+
+  /// Text shown when no recommendations are available
+  ///
+  /// In en, this message translates to:
+  /// **'No recommendations available.'**
+  String get componentsChatMessageBubbleNoRecommendationsAvailable;
+
+  /// Label for a recommendation in the message bubble
+  ///
+  /// In en, this message translates to:
+  /// **'Recommendation'**
+  String get componentsChatMessageBubbleRecommendation;
 
   /// Retry message button text
   ///
@@ -1039,6 +787,18 @@ abstract class AppLocalizations {
   /// **'Select'**
   String get componentsChatMessageBubbleSelect;
 
+  /// Text shown while a message is being sent
+  ///
+  /// In en, this message translates to:
+  /// **'Sending...'**
+  String get componentsChatMessageBubbleSending;
+
+  /// Title for the suggested dishes section
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested Dishes'**
+  String get componentsChatMessageBubbleSuggestedDishes;
+
   /// Agent steps tap instruction
   ///
   /// In en, this message translates to:
@@ -1051,6 +811,12 @@ abstract class AppLocalizations {
   /// **'Yesterday'**
   String get componentsChatMessageBubbleYesterday;
 
+  /// Label for the user in the message bubble
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get componentsChatMessageBubbleYou;
+
   /// Add to meals button text
   ///
   /// In en, this message translates to:
@@ -1062,12 +828,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cooking Instructions'**
   String get componentsChatNutritionAnalysisCardCookingInstructions;
-
-  /// Dish name label
-  ///
-  /// In en, this message translates to:
-  /// **'Dish Name'**
-  String get componentsChatNutritionAnalysisCardDishName;
 
   /// Meal type label
   ///
@@ -1093,6 +853,34 @@ abstract class AppLocalizations {
   /// **'Quick Actions'**
   String get componentsChatQuickActionsQuickActions;
 
+  /// Change avatar button text
+  ///
+  /// In en, this message translates to:
+  /// **'Change Avatar'**
+  String
+  get componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogChangeAvatar;
+
+  /// Profile save success message
+  ///
+  /// In en, this message translates to:
+  /// **'Profile saved successfully'**
+  String
+  get componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaved;
+
+  /// Profile save error message
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to save profile'**
+  String
+  get componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogProfileSaveFailed;
+
+  /// Remove avatar button text
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Avatar'**
+  String
+  get componentsChatUserProfileCustomizationDialogComponentsChatBotProfileCustomizationDialogRemoveAvatar;
+
   /// Edit user profile dialog title
   ///
   /// In en, this message translates to:
@@ -1105,35 +893,11 @@ abstract class AppLocalizations {
   /// **'Username'**
   String get componentsChatUserProfileCustomizationDialogUsername;
 
-  /// Delete button text
-  ///
-  /// In en, this message translates to:
-  /// **'Delete'**
-  String get componentsDishesDishCardDelete;
-
-  /// Menu item text to edit
-  ///
-  /// In en, this message translates to:
-  /// **'Edit'**
-  String get componentsDishesDishCardEdit;
-
-  /// Button text to add ingredient
-  ///
-  /// In en, this message translates to:
-  /// **'Add Ingredient'**
-  String get componentsDishesDishFormIngredientFormModalAddIngredient;
-
   /// Edit Ingredient
   ///
   /// In en, this message translates to:
   /// **'Edit Ingredient'**
   String get componentsDishesDishFormIngredientFormModalEditIngredient;
-
-  /// g
-  ///
-  /// In en, this message translates to:
-  /// **'g'**
-  String get componentsDishesDishFormIngredientFormModalGrams;
 
   /// Label for ingredient name field
   ///
@@ -1145,13 +909,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Enter ingredient name'**
-  String get componentsDishesDishFormIngredientFormModalIngredientNamePlaceholder;
-
-  /// kcal
-  ///
-  /// In en, this message translates to:
-  /// **'kcal'**
-  String get componentsDishesDishFormIngredientFormModalKcal;
+  String
+  get componentsDishesDishFormIngredientFormModalIngredientNamePlaceholder;
 
   /// Nutrition Information
   ///
@@ -1169,7 +928,8 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Please enter an ingredient name'**
-  String get componentsDishesDishFormIngredientFormModalPleaseEnterIngredientName;
+  String
+  get componentsDishesDishFormIngredientFormModalPleaseEnterIngredientName;
 
   /// Please enter a quantity
   ///
@@ -1195,6 +955,20 @@ abstract class AppLocalizations {
   /// **'Enter quantity'**
   String get componentsDishesDishFormIngredientFormModalQuantityPlaceholder;
 
+  /// g
+  ///
+  /// In en, this message translates to:
+  /// **'g'**
+  String
+  get componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalGrams;
+
+  /// kcal
+  ///
+  /// In en, this message translates to:
+  /// **'kcal'**
+  String
+  get componentsDishesDishFormSmartNutritionCardComponentsDishesDishFormIngredientFormModalKcal;
+
   /// Nutritional Information
   ///
   /// In en, this message translates to:
@@ -1207,23 +981,17 @@ abstract class AppLocalizations {
   /// **'Add notes (optional)'**
   String get componentsModalsDishLogModalAddNotes;
 
-  /// Breakfast meal type
-  ///
-  /// In en, this message translates to:
-  /// **'Breakfast'**
-  String get componentsModalsDishLogModalBreakfast;
-
   /// Label for calculated nutrition section
   ///
   /// In en, this message translates to:
   /// **'Calculated Nutrition'**
   String get componentsModalsDishLogModalCalculatedNutrition;
 
-  /// Dinner meal type
+  /// Calories label
   ///
   /// In en, this message translates to:
-  /// **'Dinner'**
-  String get componentsModalsDishLogModalDinner;
+  /// **'Calories'**
+  String get componentsModalsDishLogModalComponentsCalendarMacroSummaryCalories;
 
   /// Success message when dish is logged
   ///
@@ -1242,12 +1010,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Log Dish'**
   String get componentsModalsDishLogModalLogDishTitle;
-
-  /// Lunch meal type
-  ///
-  /// In en, this message translates to:
-  /// **'Lunch'**
-  String get componentsModalsDishLogModalLunch;
 
   /// Label for notes field
   ///
@@ -1273,12 +1035,6 @@ abstract class AppLocalizations {
   /// **'Select Meal Type'**
   String get componentsModalsDishLogModalSelectMealType;
 
-  /// Snack meal type
-  ///
-  /// In en, this message translates to:
-  /// **'Snack'**
-  String get componentsModalsDishLogModalSnack;
-
   /// Barcode scanner title
   ///
   /// In en, this message translates to:
@@ -1290,12 +1046,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Error scanning barcode: {error}'**
   String componentsScannerBarcodeScannerErrorScanningBarcode(String error);
-
-  /// Open settings button text
-  ///
-  /// In en, this message translates to:
-  /// **'Open Settings'**
-  String get componentsScannerBarcodeScannerOpenSettings;
 
   /// Message when product is not found
   ///
@@ -1357,12 +1107,6 @@ abstract class AppLocalizations {
   /// **'Search products...'**
   String get componentsScannerProductSearchSearchProducts;
 
-  /// Retry button text
-  ///
-  /// In en, this message translates to:
-  /// **'Retry'**
-  String get componentsSharedErrorDisplayRetry;
-
   /// Calendar label
   ///
   /// In en, this message translates to:
@@ -1374,18 +1118,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Chat'**
   String get componentsUiCustomTabBarChat;
-
-  /// Meals label
-  ///
-  /// In en, this message translates to:
-  /// **'Meals'**
-  String get componentsUiCustomTabBarMeals;
-
-  /// Menu label
-  ///
-  /// In en, this message translates to:
-  /// **'Menu'**
-  String get componentsUiCustomTabBarMenu;
 
   /// AI thinking status message
   ///
@@ -1416,6 +1148,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI Nutrition Tip'**
   String get screensCalendarAiNutritionTip;
+
+  /// Label for dish when name is not available
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown Dish'**
+  String get screensCalendarComponentsCalendarCalendarDayDetailUnknownDish;
 
   /// Prompt to configure API key for AI tips
   ///
@@ -1483,6 +1221,12 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to clear the chat history? This action cannot be undone.'**
   String get screensChatClearChatConfirmation;
 
+  /// Cancel button text
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get screensChatComponentsChatBotProfileCustomizationDialogCancel;
+
   /// Configure API key button text
   ///
   /// In en, this message translates to:
@@ -1531,17 +1275,56 @@ abstract class AppLocalizations {
   /// **'Category'**
   String get screensDishCreateCategory;
 
+  /// Save button text
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get screensDishCreateComponentsChatBotProfileCustomizationDialogSave;
+
+  /// Error message when image picker fails
+  ///
+  /// In en, this message translates to:
+  /// **'Error picking image: {error}'**
+  String screensDishCreateComponentsChatChatInputErrorPickingImage(
+    Object error,
+  );
+
+  /// Scan barcode button text
+  ///
+  /// In en, this message translates to:
+  /// **'Scan Barcode'**
+  String get screensDishCreateComponentsChatChatInputScanBarcode;
+
+  /// Search product button text
+  ///
+  /// In en, this message translates to:
+  /// **'Search Product'**
+  String get screensDishCreateComponentsChatChatInputSearchProduct;
+
+  /// Ingredients data type
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients'**
+  String get screensDishCreateComponentsChatMessageBubbleIngredients;
+
+  /// Dish name label
+  ///
+  /// In en, this message translates to:
+  /// **'Dish Name'**
+  String get screensDishCreateComponentsChatNutritionAnalysisCardDishName;
+
+  /// Button text to add ingredient
+  ///
+  /// In en, this message translates to:
+  /// **'Add Ingredient'**
+  String
+  get screensDishCreateComponentsDishesDishFormIngredientFormModalAddIngredient;
+
   /// Are you sure you want to delete this ingredient?
   ///
   /// In en, this message translates to:
   /// **'Are you sure you want to delete this ingredient?'**
   String get screensDishCreateConfirmDeleteIngredient;
-
-  /// Button text to create new dish
-  ///
-  /// In en, this message translates to:
-  /// **'Create Dish'**
-  String get screensDishCreateCreateDish;
 
   /// Delete Ingredient
   ///
@@ -1590,12 +1373,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Error saving dish'**
   String get screensDishCreateErrorSavingDish;
-
-  /// Favorite toggle label
-  ///
-  /// In en, this message translates to:
-  /// **'Favorite'**
-  String get screensDishCreateFavorite;
 
   /// Gallery
   ///
@@ -1693,6 +1470,54 @@ abstract class AppLocalizations {
   /// **'All Categories'**
   String get screensMealsAllCategories;
 
+  /// Delete button text
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get screensMealsComponentsDishesDishCardDelete;
+
+  /// Menu item text to edit
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get screensMealsComponentsDishesDishCardEdit;
+
+  /// Breakfast meal type
+  ///
+  /// In en, this message translates to:
+  /// **'Breakfast'**
+  String get screensMealsComponentsModalsDishLogModalBreakfast;
+
+  /// Dinner meal type
+  ///
+  /// In en, this message translates to:
+  /// **'Dinner'**
+  String get screensMealsComponentsModalsDishLogModalDinner;
+
+  /// Lunch meal type
+  ///
+  /// In en, this message translates to:
+  /// **'Lunch'**
+  String get screensMealsComponentsModalsDishLogModalLunch;
+
+  /// Snack meal type
+  ///
+  /// In en, this message translates to:
+  /// **'Snack'**
+  String get screensMealsComponentsModalsDishLogModalSnack;
+
+  /// Retry button text
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get screensMealsComponentsSharedErrorDisplayRetry;
+
+  /// Meals label
+  ///
+  /// In en, this message translates to:
+  /// **'Meals'**
+  String get screensMealsComponentsUiCustomTabBarMeals;
+
   /// Empty state subtitle encouraging dish creation
   ///
   /// In en, this message translates to:
@@ -1759,6 +1584,18 @@ abstract class AppLocalizations {
   /// **'Remove from Favorites'**
   String get screensMealsRemoveFromFavorites;
 
+  /// Button text to create new dish
+  ///
+  /// In en, this message translates to:
+  /// **'Create Dish'**
+  String get screensMealsScreensDishCreateCreateDish;
+
+  /// Favorite toggle label
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite'**
+  String get screensMealsScreensDishCreateFavorite;
+
   /// Placeholder text for dish search field
   ///
   /// In en, this message translates to:
@@ -1800,6 +1637,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Chat Agent Options'**
   String get screensMenuChatAgentOptions;
+
+  /// Menu label
+  ///
+  /// In en, this message translates to:
+  /// **'Menu'**
+  String get screensMenuComponentsUiCustomTabBarMenu;
 
   /// Subtitle for API key settings
   ///
@@ -2449,6 +2292,13 @@ abstract class AppLocalizations {
   /// **'cm'**
   String get screensSettingsImportProfileCompletionCm;
 
+  /// Required field validation message
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String
+  get screensSettingsImportProfileCompletionComponentsChatBotProfileCustomizationDialogRequiredField;
+
   /// Email field label
   ///
   /// In en, this message translates to:
@@ -2484,12 +2334,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Gender'**
   String get screensSettingsImportProfileCompletionGender;
-
-  /// Height field label
-  ///
-  /// In en, this message translates to:
-  /// **'Height'**
-  String get screensSettingsImportProfileCompletionHeight;
 
   /// Height range validation message
   ///
@@ -2605,12 +2449,6 @@ abstract class AppLocalizations {
   /// **'Very Active'**
   String get screensSettingsImportProfileCompletionVeryActive;
 
-  /// Weight field label
-  ///
-  /// In en, this message translates to:
-  /// **'Weight'**
-  String get screensSettingsImportProfileCompletionWeight;
-
   /// Weight range validation message
   ///
   /// In en, this message translates to:
@@ -2623,11 +2461,32 @@ abstract class AppLocalizations {
   /// **'years'**
   String get screensSettingsImportProfileCompletionYears;
 
-  /// Discard changes button text
+  /// Carbs label
   ///
   /// In en, this message translates to:
-  /// **'Discard Changes'**
-  String get screensSettingsMacroCustomizationDiscardChanges;
+  /// **'Carbs'**
+  String
+  get screensSettingsMacroCustomizationComponentsCalendarMacroSummaryCarbs;
+
+  /// Fat label
+  ///
+  /// In en, this message translates to:
+  /// **'Fat'**
+  String get screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFat;
+
+  /// Fiber nutrition label
+  ///
+  /// In en, this message translates to:
+  /// **'Fiber'**
+  String
+  get screensSettingsMacroCustomizationComponentsCalendarMacroSummaryFiber;
+
+  /// Protein label
+  ///
+  /// In en, this message translates to:
+  /// **'Protein'**
+  String
+  get screensSettingsMacroCustomizationComponentsCalendarMacroSummaryProtein;
 
   /// Title for macro customization screen
   ///
@@ -2653,24 +2512,6 @@ abstract class AppLocalizations {
   /// **'Reset to Defaults'**
   String get screensSettingsMacroCustomizationResetToDefaults;
 
-  /// Save changes button text
-  ///
-  /// In en, this message translates to:
-  /// **'Save Changes'**
-  String get screensSettingsMacroCustomizationSaveChanges;
-
-  /// Unsaved changes dialog title
-  ///
-  /// In en, this message translates to:
-  /// **'Unsaved Changes'**
-  String get screensSettingsMacroCustomizationUnsavedChanges;
-
-  /// Unsaved changes dialog message
-  ///
-  /// In en, this message translates to:
-  /// **'You have unsaved changes. Do you want to save them before leaving?'**
-  String get screensSettingsMacroCustomizationUnsavedChangesMessage;
-
   /// Button text to analyze calorie targets
   ///
   /// In en, this message translates to:
@@ -2682,6 +2523,13 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'BMI'**
   String get screensSettingsProfileSettingsBmi;
+
+  /// Open settings button text
+  ///
+  /// In en, this message translates to:
+  /// **'Open Settings'**
+  String
+  get screensSettingsProfileSettingsComponentsScannerBarcodeScannerOpenSettings;
 
   /// Connect to health button text
   ///
@@ -2820,6 +2668,34 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reset Application Data'**
   String get screensSettingsProfileSettingsResetAppTitle;
+
+  /// Discard changes button text
+  ///
+  /// In en, this message translates to:
+  /// **'Discard Changes'**
+  String
+  get screensSettingsProfileSettingsScreensSettingsMacroCustomizationDiscardChanges;
+
+  /// Save changes button text
+  ///
+  /// In en, this message translates to:
+  /// **'Save Changes'**
+  String
+  get screensSettingsProfileSettingsScreensSettingsMacroCustomizationSaveChanges;
+
+  /// Unsaved changes dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Unsaved Changes'**
+  String
+  get screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChanges;
+
+  /// Unsaved changes dialog message
+  ///
+  /// In en, this message translates to:
+  /// **'You have unsaved changes. Do you want to save them before leaving?'**
+  String
+  get screensSettingsProfileSettingsScreensSettingsMacroCustomizationUnsavedChangesMessage;
 
   /// Sync health data button text
   ///
@@ -3073,6 +2949,20 @@ abstract class AppLocalizations {
   /// **'Refresh'**
   String get screensSettingsStatisticsRefresh;
 
+  /// Height field label
+  ///
+  /// In en, this message translates to:
+  /// **'Height'**
+  String
+  get screensSettingsStatisticsScreensSettingsImportProfileCompletionHeight;
+
+  /// Weight field label
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String
+  get screensSettingsStatisticsScreensSettingsImportProfileCompletionWeight;
+
   /// Statistics page title
   ///
   /// In en, this message translates to:
@@ -3170,7 +3060,8 @@ abstract class AppLocalizations {
   String get utilsLinkHandlerOpeningLink;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -3179,26 +3070,28 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['de', 'en', 'es'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['de', 'en', 'es'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'de': return AppLocalizationsDe();
-    case 'en': return AppLocalizationsEn();
-    case 'es': return AppLocalizationsEs();
+    case 'de':
+      return AppLocalizationsDe();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }
